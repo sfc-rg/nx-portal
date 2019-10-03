@@ -1,0 +1,36 @@
+{
+    "miragefile": "v0.0.4",
+
+    "project": {
+        "name": "portal",
+        "version": "0.0.1",
+        "author": "Shota Shimazu <shotan@sfc.wide.ad.jp>",
+        "git": "https://github.com/sfc-rg/nx-portal",
+        "license": "Apache",
+        "description": "Next RG Portal",
+
+        "django": {
+            "path": ".",
+            "module": "portal",
+            "package": "pipenv",
+            "database": "PostgreSQL"
+        },
+
+        "frontend": {
+            "path": "shell",
+            "package": "yarn",
+            "builder": "webpack"
+        },
+
+        "workspace": {
+            "path": ".mirage"
+        },
+
+        "copyright": {
+            "start_year": 2019,
+            "copyrightors": [
+                "Shota Shimazu"
+            ]
+        }
+    }
+}
