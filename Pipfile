@@ -17,6 +17,7 @@ djangorestframework = "*"
 django-cors-headers = "*"
 dj-database-url = "*"
 requests = "*"
+django-webpack-loader = "*"
 
 [requires]
 python_version = "3.7"
