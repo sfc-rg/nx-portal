@@ -7,11 +7,15 @@ verify_ssl = true
 pylint = "*"
 pep8 = "*"
 django-mirage = "*"
+pylint-django = "*"
+pytest = "*"
+pytest-django = "*"
 
 [packages]
 django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.7"
