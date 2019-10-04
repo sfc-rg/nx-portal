@@ -16,6 +16,7 @@ django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 dj-database-url = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
