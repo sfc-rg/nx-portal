@@ -2,7 +2,7 @@
 
 *Last updated at 2019/10/04 by [shotan](mailto:shotan@sfc.wide.ad.jp)*.
 
-## Suposed Platforms
+## Supported Platforms
 
 - macOS
 
