@@ -1,3 +1,4 @@
+import requests
 
 class SlackNotificator():
     
@@ -6,9 +7,6 @@ class SlackNotificator():
     def shoot(self, text):
 
         try:
-            is_slack = request.POST['is_slack']
-
-
             WEB_HOOK_URL = settings.SLACK_INCOMING_TOKEN
 
             requests.post(WEB_HOOK_URL, data = json.dumps({

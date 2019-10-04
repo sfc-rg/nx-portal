@@ -1,11 +1,11 @@
 # NX Portal 
 
 
-| Deploy | CI |
+| CI | Deploy |
 |:--:|:--:|
-| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) | [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) |
+| [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) |
 
-NEXT PORTAL
+NX Portal is conceptual RG portal.
 
 
 # 📄  Documentation
