@@ -10,7 +10,7 @@ NEXT PORTAL
 
 # 📄  Documentation
 
-Documents are here.
+Documents are [here](./docs/INDEX.md).
 
 # Requirements
 
