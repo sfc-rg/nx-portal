@@ -3,6 +3,15 @@
 NEXT PORTAL
 
 
+# Setup
+
+```
+$pipenv shell
+$pipenv install
+$pipenv install -d
+$mg s # Run server
+```
+
 # Requirements
 
 - Django
