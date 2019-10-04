@@ -8,14 +8,9 @@
 NEXT PORTAL
 
 
-# Setup
+# 📄  Documentation
 
-```
-$pipenv shell
-$pipenv install
-$pipenv install -d
-$mg s # Run server
-```
+Documents are here.
 
 # Requirements
 
