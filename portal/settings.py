@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-from . import configs
+from .configs import *
 
 
 try:
@@ -29,8 +29,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$3x)8ofs$9kkutzioi72i0ti4!s^*1j_2ivls#o4ca)--mzl2z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,7 +82,7 @@ WSGI_APPLICATION = 'portal.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 if RUNNING_MODE == "production":
-    DATABASES = configs.database_setting
+    DATABASES = database_setting
 else:
     DATABASES = {
         'default': {
