@@ -39,6 +39,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
+    'meeting.apps.MeetingConfig',
     'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
