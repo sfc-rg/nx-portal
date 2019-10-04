@@ -1,0 +1,59 @@
+{
+    "name": "Labo Portal",
+    "description": "Portal web system for University Labo.",
+    "repository": "https://github.com/sfc-rg/nx-portal",
+    "keywords": ["python", "django", "static"],
+    "success_url": "/",
+    "image": "heroku/python",
+    "buildpacks": [
+        {
+          "url": "heroku/python"
+        }
+    ],
+    "addons": ["heroku-postgresql:hobby-dev"],
+    "scripts": {
+        "postdeploy": "python manage.py migrate"
+    },
+    "env": {
+        "APPLICATION_URL": {
+            "description": "Application URL is web system host name.",
+            "value": "{YOUR APP NAME}.herokuapp.com",
+            "required": true
+        },
+        "SECRET_KEY": {
+          "description": "A secret key for verifying the integrity of signed cookies.",
+          "generator": "secret"
+        },
+        "APP_NAME": {
+            "description": "Application name that will be displayed on navigation bar.",
+            "value": "Labo Portal",
+            "required": true
+        },
+        "NSYS_RUNNING_MODE": {
+            "description": "Settings for defining a running mode.",
+            "value": "production",
+            "required": true
+        },
+        "SEASONABLE_EMOJI": {
+            "description": "Add emoji on navigation bar.",
+            "value": "🧪",
+            "required": false
+
+        },
+        "SLACK_INCOMING_TOKEN": {
+            "description": "Enabling slack notification.",
+            "value": "",
+            "required": false
+        },
+        "DISABLE_COLLECTSTATIC": {
+            "description": "Disables running ``collectstatic`` during the build.",
+            "value": "1"
+        },
+        "DEBUG_LOG_MODE": {
+            "description": "Show debug error log.",
+            "value": "TRUE",
+            "required": true
+        }
+    }
+
+}
