@@ -207,8 +207,8 @@ Miragefile.secret
 ## Front-end Ignore                                    ##
 #########################################################
 
-shell/dist/
-shell/build/
+frontend/dist/
+fonrtend/build/
 
 #########################################################
 ## Project Ignore                                      ##
@@ -218,3 +218,4 @@ tmp/
 
 # Describe project specified ignore files or directories here.
 
+.vscode/
