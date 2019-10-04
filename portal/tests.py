@@ -4,4 +4,4 @@ class IndexTest(TestCase):
     def test_http(self):
         client = Client()
         response = client.get('')
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 200)
