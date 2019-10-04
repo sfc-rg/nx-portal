@@ -1,5 +1,7 @@
 # Setup Development Environment
 
+*Last updated at 2019/10/04 by [shotan](mailto:shotan@sfc.wide.ad.jp)*
+
 ## Suposed Platforms
 
 - macOS
