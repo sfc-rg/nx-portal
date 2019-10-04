@@ -1,6 +1,6 @@
 {
-    "name": "Labo Portal",
-    "description": "Portal web system for University Labo.",
+    "name": "NX RG Portal",
+    "description": "Next portal web system for Keio University RG Labo.",
     "repository": "https://github.com/sfc-rg/nx-portal",
     "keywords": ["python", "django", "static"],
     "success_url": "/",
@@ -29,14 +29,14 @@
             "value": "Labo Portal",
             "required": true
         },
-        "NSYS_RUNNING_MODE": {
+        "PORTAL_RUNNING_MODE": {
             "description": "Settings for defining a running mode.",
             "value": "production",
             "required": true
         },
         "SEASONABLE_EMOJI": {
             "description": "Add emoji on navigation bar.",
-            "value": "🧪",
+            "value": "🎄",
             "required": false
 
         },
@@ -55,5 +55,4 @@
             "required": true
         }
     }
-
 }
