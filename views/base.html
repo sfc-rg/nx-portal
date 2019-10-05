@@ -1,0 +1,25 @@
+{% load render_bundle from webpack_loader %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ APP_NAME }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% render_bundle 'main' 'css' %}
+  </head>
+<body>
+  {% include 'components/navbar.html' %}
+
+  <div class="ontainer mt-3">
+    {% block content %}
+    {% endblock %}
+  </div>
+  {% render_bundle 'main' 'js' %}
+
+</body>
+</html>
