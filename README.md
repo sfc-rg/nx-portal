@@ -3,10 +3,9 @@
 
 
 | CI | Result |
-|:--:|:--:|
-| Circle CI| [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) |
-| Github Actions| [![Actions Status](https://github.com/{owner}/{repo}/workflows/{workflow_name}/badge.svg)](https://github.com/{owner}/{repo}/actions)
- |
+|:---|:------:|
+| Circle CI | [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) |
+| Github Actions | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/{Python package}/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
