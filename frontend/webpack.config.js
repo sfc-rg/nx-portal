@@ -106,6 +106,7 @@ module.exports = [
             ]
         },
         plugins: [
+
             new HtmlWebpackPlugin({
                 filename: `index.html`,
                 template: "./src/pages/index.pug",
@@ -116,9 +117,9 @@ module.exports = [
 
 const documents = globule.find(
     './src/documents/**/*.pug', {
-      ignore: [
+    ignore: [
         './src/documents/**/_*/*.pug'
-      ]
-    }
-  )
+    ]
+}
+)
 
