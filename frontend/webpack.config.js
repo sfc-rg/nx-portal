@@ -1,4 +1,5 @@
 const path = require('path');
+const globule = require('globule')
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -92,14 +93,32 @@ module.exports = [
                 {
                     test: /\.pug$/,
                     exclude: /node_modules/,
-                    use: 'pug-loader',
+                    use: [
+                        {
+                            loader: 'pug-loader',
+                            options: {
+                                pretty: true,
+                                root: path.resolve(__dirname, 'src/pages'),
+                            }
+                        },
+                    ],
                 }
             ]
         },
         plugins: [
             new HtmlWebpackPlugin({
-                template: "./src/pages/index.pug"
+                filename: `index.html`,
+                template: "./src/pages/index.pug",
             })
         ]
     }
 ];
+
+const documents = globule.find(
+    './src/documents/**/*.pug', {
+      ignore: [
+        './src/documents/**/_*/*.pug'
+      ]
+    }
+  )
+
