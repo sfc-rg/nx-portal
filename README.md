@@ -3,9 +3,9 @@
 
 
 | CI | Result |
-|:---|:------:|
+|:---|:-------|
 | Circle CI | [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) |
-| Server | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Python%20package/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
+| Server | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Python%20Server/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
 | Front | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Node%20Frontend/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
 
 
