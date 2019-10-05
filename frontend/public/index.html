@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ APP_NAME }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Bootstrap with Webpack4</a>
+    </nav>
+</header>
+
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="p-1 col-sm-12">
+            <button id="bt1" type="button" class="btn btn-primary">Primary</button>
+            <button id="bt2" type="button" class="btn btn-secondary">Secondary</button>
+            <button id="bt3" type="button" class="btn btn-success">Success</button>
+            <button id="bt4" type="button" class="btn btn-danger">Danger</button>
+            <button id="bt5" type="button" class="btn btn-warning">Warning</button>
+            <button id="bt6" type="button" class="btn btn-info">Info</button>
+            <button id="bt7" type="button" class="btn btn-light">Light</button>
+            <button id="bt8" type="button" class="btn btn-dark">Dark</button>
+            <button id="bt9" type="button" class="btn btn-link">Link</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="p-1 col-sm-12">
+            <ul class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Link1</a>
+                <a href="#" class="list-group-item list-group-item-action">Link2</a>
+                <a href="#" class="list-group-item list-group-item-action">Link3</a>
+                <a href="#" class="list-group-item list-group-item-action">Link4</a>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="p-1 col-sm-12">
+            <button id="flip-tab" type="button" class="btn btn-primary col-sm-12">Flip tab</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="p-1 col-sm-12">
+
+            <!-- Tab buttons -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#tab-no1" id="tab1" class="nav-link active" data-toggle="tab">Tab1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab-no2" id="tab2" class="nav-link" data-toggle="tab">Tab2</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="tab-no1" class="tab-pane active">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            content-1-1
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            content-1-2
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-no2" class="tab-pane">
+                    <div class="row">
+                        <div class="col-6 col-sm-6">
+                            content-2-1
+                        </div>
+                        <div class="col-6 col-sm-6">
+                            content-2-2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

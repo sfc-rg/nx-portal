@@ -66,7 +66,7 @@ ROOT_URLCONF = 'portal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join('frontend', 'dist'), 'views'],
+        'DIRS': ['views',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,13 +136,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'frontend', 'static'),
+    os.path.join(BASE_DIR, 'frontend'),
 )
 
-WEBPACK_LOADER = {
-   'DEFAULT': {
-       'BUNDLE_DIR_NAME': 'bundles/',
-       'STATS_FILE': os.path.join(BASE_DIR, 'frontend', 'webpack-stats.json'),
-   }
-}
 
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'CACHE': DEBUG,
+        'BUNDLE_DIR_NAME': 'dist/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'frontend', 'webpack-stats.json'),
+    }
+}

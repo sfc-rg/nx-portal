@@ -1,0 +1,18 @@
+// padding for fixed nav-bar
+body {
+  padding-top: 70px;
+}
+
+// padding for tab content
+.tab-content {
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+//customize bootstrap theme
+$theme-colors: (
+        dark: #999999
+);
+
+//import boostrap's scss
+@import "~bootstrap/scss/bootstrap.scss";
