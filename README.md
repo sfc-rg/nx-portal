@@ -1,6 +1,8 @@
 # NX Portal
 
-
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/sfc-rg/nx-portal/django?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues-raw/sfc-rg/nx-portal?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/sfc-rg/nx-portal?color=pink&style=for-the-badge)
 
 | CI | Result |
 |:---|:-------|
