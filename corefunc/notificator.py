@@ -1,7 +1,8 @@
+from django.conf import settings
 import requests
 
 class SlackNotificator():
-    
+
 
 
     def shoot(self, text):
