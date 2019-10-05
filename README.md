@@ -3,6 +3,8 @@
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/sfc-rg/nx-portal/django?style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues-raw/sfc-rg/nx-portal?style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/sfc-rg/nx-portal?color=pink&style=for-the-badge)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 
 | CI | Result |
 |:---|:-------|
@@ -10,8 +12,6 @@
 | Server | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Python%20Server/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
 | Front | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Node%20Frontend/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 NX Portal is conceptual RG portal.
 
