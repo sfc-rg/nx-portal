@@ -15,4 +15,4 @@ except:
 try:
     APPLICATION_NAME = os.environ["APP_NAME"]
 except:
-    APPLICATION_NAME = "NECO Portal"
+    APPLICATION_NAME = "RG Portal"

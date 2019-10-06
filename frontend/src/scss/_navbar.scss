@@ -17,27 +17,37 @@ $nx-nav-height: 60px;
     align-items: center;
 }
 
+.nx-nav-brand {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .nx-nav, .nx-nav-item {
     list-style: none;
     display: inline;
     height: $nx-nav-height;
 }
 
-.active {
+.nx-active {
     a {
-        color: rgb(44, 85, 196) !important;
+        color: rgb(207, 22, 22) !important;
     }
 }
 
-
 .nx-nav-item {
     line-height: $nx-nav-height;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-left: 10px;
     margin-right: 10px;
 
     a {
-        color: rgb(51, 51, 51) !important;
+        color: rgb(121, 121, 121);
     }
 }
 
@@ -48,4 +58,10 @@ $nx-nav-height: 60px;
     width: $nx-nav-height - 22px;
     height: $nx-nav-height - 22px;
     border-radius: 50%;
+}
+
+@media (prefers-color-scheme: dark) {
+    .nx-navbar {
+        background: rgb(29, 29, 29);
+    }
 }
