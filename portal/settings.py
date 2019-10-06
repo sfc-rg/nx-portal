@@ -146,7 +146,7 @@ if RUNNING_MODE == "devel":
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_DIRS = (
-        os.path.join('frontend', 'dist'),
+        os.path.join(BASE_DIR, 'frontend'),
     )
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
