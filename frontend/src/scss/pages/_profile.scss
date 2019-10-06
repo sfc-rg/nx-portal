@@ -1,0 +1,14 @@
+$avator-size: 200px;
+
+
+#login_name {
+    font-size: 5rem;
+    line-height: $avator-size;
+}
+
+#pg-profile-avator {
+    background: red;
+    width: $avator-size;
+    height: $avator-size;
+    border-radius: 50%;
+}

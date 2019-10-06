@@ -9,13 +9,18 @@ $nx-nav-height: 60px;
     height: $nx-nav-height;
     width: 400px;
     filter: drop-shadow(1px 2px 5px rgba(61, 61, 61, 0.233));
+    padding-left: 25px;
+    padding-right: 14px;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nx-nav, .nx-nav-item {
     list-style: none;
     display: inline;
+    height: $nx-nav-height;
 }
 
 .active {
@@ -27,7 +32,7 @@ $nx-nav-height: 60px;
 
 .nx-nav-item {
     line-height: $nx-nav-height;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -36,12 +41,11 @@ $nx-nav-height: 60px;
     }
 }
 
-
 .nx-nav-user {
-    line-height: $nx-nav-height;
 }
+
 .nx-nav-avator {
-    width: $nx-nav-height - 18px;
-    height: $nx-nav-height - 18px;
+    width: $nx-nav-height - 22px;
+    height: $nx-nav-height - 22px;
     border-radius: 50%;
 }
