@@ -6,11 +6,11 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 
-| CI | Result |
-|:---|:-------|
-| Circle CI | [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) |
-| Server | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Python%20Server/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
-| Front | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Node%20Frontend/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) |
+| CI | Release (master) | Development (dev_stream)|
+|:---|:-----------------|:------------------------|
+| Circle CI | [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal) | [![CircleCI](https://circleci.com/gh/sfc-rg/nx-portal/tree/dev_stream.svg?style=svg)](https://circleci.com/gh/sfc-rg/nx-portal/tree/dev_stream) |
+| Server | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Python%20Server/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Python%20Server/badge.svg?branch=dev_stream)](https://github.com/sfc-rg/nx-portal/actions) |
+| Front | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Node%20Frontend/badge.svg)](https://github.com/sfc-rg/nx-portal/actions) | [![Actions Status](https://github.com/sfc-rg/nx-portal/workflows/Node%20Frontend/badge.svg?branch=dev_stream)](https://github.com/sfc-rg/nx-portal/actions) |
 
 
 NX Portal is conceptual RG portal.
