@@ -48,10 +48,6 @@
             "value": "",
             "required": false
         },
-        "DISABLE_COLLECTSTATIC": {
-            "description": "Disables running ``collectstatic`` during the build.",
-            "value": "1"
-        },
         "DEBUG_LOG_MODE": {
             "description": "Show debug error log.",
             "value": "TRUE",
