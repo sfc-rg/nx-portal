@@ -13,8 +13,10 @@
 
 .nx-card-separator {
     width: 100%;
-    background: rgb(146, 146, 146);
-    height: 2px;
+    background: rgb(129, 129, 129);
+    height: 1.5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,4 +24,26 @@
         background: rgb(32, 32, 32);
         color: white;
     }
+}
+
+
+.nx-table-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+
+.nx-card-heading1 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+
+.nx-card-spacer {
+    height: 50px;
 }
