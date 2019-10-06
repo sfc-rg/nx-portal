@@ -65,3 +65,19 @@ $nx-nav-height: 60px;
         background: rgb(29, 29, 29);
     }
 }
+
+
+@media screen and (max-width: 480px) {
+    .nx-navbar {
+        position: fixed;
+        bottom: 15px;
+        z-index: 1000;
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .nx-nav-brand {
+        display: none;
+    }
+}
