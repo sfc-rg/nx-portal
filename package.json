@@ -1,0 +1,8 @@
+{
+  "name": "nx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install -g yarn && cd frontend && yarn install --production=false && yarn build"
+  }
+}
