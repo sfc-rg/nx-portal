@@ -19,6 +19,11 @@ django-cors-headers = "*"
 dj-database-url = "*"
 requests = "*"
 django-webpack-loader = "*"
+psycopg2-binary = "*"
+gunicorn = "*"
+whitenoise = "*"
+django-filter = "*"
+channels = "*"
 
 [requires]
 python_version = "3.7"
