@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
     "dev": "webpack-dev-server"
   },
   "author": "Shota Shimazu <shotan@sfc.wide.ad.jp> (https://shotastage.xyz)",
@@ -19,6 +20,7 @@
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
@@ -33,6 +35,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "bootstrap": "^4.3.1",
     "core-js": "^3.2.1",
     "jquery": "^3.4.1",

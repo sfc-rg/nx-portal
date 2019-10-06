@@ -22,6 +22,17 @@ module.exports = {
                     { loader: 'css-loader' },
                     { loader: 'sass-loader' },
                 ],
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2|svg)$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: "[name].[ext]",
+                        outputPath: './webfonts',
+                        publicPath: '../webfonts',
+                    }
+                }]
             }
         ],
     },
