@@ -1,6 +1,6 @@
 from django.urls import path
-from account.views import YOUR_VIEW_CLASSES
+from account.views import ProfileView
 
 urlpatterns = [
-    # path('url_letter/', YOUR_VIEW_CLASS.as_view(), name='starts'),
+    path('', ProfileView.as_view()),
 ]

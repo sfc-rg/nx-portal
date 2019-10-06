@@ -1,27 +1,47 @@
+$nx-nav-height: 60px;
+
 .nx-navbar {
     border: none;
     border-radius: 30px;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 25px;
     background: white;
-    height: 60px;
+    height: $nx-nav-height;
     width: 400px;
     filter: drop-shadow(1px 2px 5px rgba(61, 61, 61, 0.233));
 
+    display: flex;
 }
 
-.nx-navbar-brand {
+.nx-nav, .nx-nav-item {
+    list-style: none;
+    display: inline;
+}
 
-    display: inline-block;
-    padding-top: $navbar-brand-padding-y;
-    padding-bottom: $navbar-brand-padding-y;
-    margin-right: $navbar-padding-x;
-    @include font-size($navbar-brand-font-size);
-    line-height: inherit;
-    white-space: nowrap;
-
-    @include hover-focus {
-      text-decoration: none;
+.active {
+    a {
+        color: rgb(44, 85, 196) !important;
     }
-  }
+}
 
+
+.nx-nav-item {
+    line-height: $nx-nav-height;
+    font-size: 2.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    a {
+        color: rgb(51, 51, 51) !important;
+    }
+}
+
+
+.nx-nav-user {
+    line-height: $nx-nav-height;
+}
+.nx-nav-avator {
+    width: $nx-nav-height - 18px;
+    height: $nx-nav-height - 18px;
+    border-radius: 50%;
+}
