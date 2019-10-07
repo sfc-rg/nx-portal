@@ -34,7 +34,7 @@ $nx-nav-height: 60px;
 
 .nx-active {
     a {
-        color: rgb(207, 22, 22) !important;
+        color: white !important;
     }
 }
 
@@ -103,6 +103,12 @@ $nx-nav-height: 60px;
     height: 60px;
     line-height: 60px;
     @include shadow();
+}
+
+@media (prefers-color-scheme: dark) {
+    .nx-footer-navigation {
+        background: rgb(32, 32, 32);
+    }
 }
 
 

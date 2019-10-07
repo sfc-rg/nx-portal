@@ -6,7 +6,7 @@
     text-decoration: none;
     text-align: center;
     background: white;
-    @include inline-size(170px, 70px);
+    @include inline-size(160px, 63px);
     border-radius: 40px;
     @include shadow();
 
@@ -24,7 +24,7 @@
     text-decoration: none;
     text-align: center;
     background: red;
-    @include inline-size(130px, 45px);
+    @include inline-size(115px, 45px);
     border-radius: 40px;
 
     &:hover {
