@@ -103,5 +103,12 @@ $nx-nav-height: 60px;
     height: 60px;
     line-height: 60px;
     @include shadow();
+}
 
+
+@media screen and (max-width: 480px) {
+    .nx-footer-navigation {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
