@@ -22,5 +22,7 @@ from portal.views import (
 urlpatterns = [
     path('', HomeView.as_view()),
     path('profile/', include('account.urls')),
+    path('blog/', include('blog.urls')),
+
     path('admin/', admin.site.urls),
 ]

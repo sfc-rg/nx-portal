@@ -1,0 +1,16 @@
+.nx-button-create {
+    display: inline-block;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+    background: white;
+    @include inline-size(170px, 70px);
+    border-radius: 40px;
+    @include shadow();
+
+    &:hover {
+        text-decoration: none;
+    }
+}

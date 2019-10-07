@@ -1,9 +1,14 @@
 //import boostrap's scss
 @import "~bootstrap/scss/bootstrap.scss";
 
+// Mixins
+@import "mixins";
+
 // Components
 @import "navbar";
 @import "card";
+@import "buttons";
+@import "typography";
 
 // Pages
 @import "pages/profile";
