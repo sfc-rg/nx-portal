@@ -24,5 +24,7 @@ urlpatterns = [
     path('profile/', include('account.urls')),
     path('blog/', include('blog.urls')),
 
+    # Provided application url
     path('admin/', admin.site.urls),
+    path('markdownx/', include('markdownx.urls')),
 ]

@@ -24,6 +24,7 @@ gunicorn = "*"
 whitenoise = "*"
 django-filter = "*"
 channels = "*"
+django-markdownx = "*"
 
 [requires]
 python_version = "3.7"

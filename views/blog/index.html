@@ -7,4 +7,15 @@
 </div>
 
 
+{% for post in data %}
+  <div class="row">
+    <div class="col-md-12">
+        <div class="nx-card">
+          <h1>{{ post.title }}</h1>
+
+          {{ post.body }}
+        </div>
+    </div>
+  </div>
+{% endfor %}
 {% endblock %}
