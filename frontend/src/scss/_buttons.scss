@@ -14,3 +14,20 @@
         text-decoration: none;
     }
 }
+
+
+.nx-button-save {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-decoration: none;
+    text-align: center;
+    background: red;
+    @include inline-size(130px, 45px);
+    border-radius: 40px;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

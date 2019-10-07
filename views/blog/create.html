@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <textarea class="form-control" id="exampleTextarea" rows="50"></textarea>
+  </div>
+</div>
+
+<div class="nx-footer-navigation">
+    <p>CREATE</p>
+    <a class="nx-button-save " href="/blog/create/">Post</a>
+</div>
+{% endblock %}

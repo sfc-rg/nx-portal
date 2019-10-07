@@ -83,3 +83,25 @@ $nx-nav-height: 60px;
         display: none;
     }
 }
+
+
+
+
+.nx-footer-navigation {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    @include shadow();
+
+}

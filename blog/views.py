@@ -12,4 +12,18 @@ class BlogView(View):
         context = {
         }
 
-        return render(request, 'blog.html', context)
+        return render(request, 'blog/index.html', context)
+
+
+
+
+
+class BlogCreateView(View):
+
+    def get(self, request):
+
+
+        context = {
+        }
+
+        return render(request, 'blog/create.html', context)
