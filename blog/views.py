@@ -21,7 +21,6 @@ class BlogView(View):
     def get(self, request):
 
         posts = Post.objects.all()
-
         context = {
             'data': posts,
         }

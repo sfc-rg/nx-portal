@@ -23,6 +23,7 @@ urlpatterns = [
     path('', HomeView.as_view()),
     path('profile/', include('account.urls')),
     path('blog/', include('blog.urls')),
+    path('setup/', include('setup.urls')),
 
     # Provided application url
     path('admin/', admin.site.urls),
