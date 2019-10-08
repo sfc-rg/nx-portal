@@ -1,0 +1,15 @@
+Source: NX-RG-Portal
+Section: python
+Priority: extra
+Maintainer: Shota Shimazu <shotan@sfc.wide.ad.jp>
+Build-Depends: debhelper (>= 9),
+               python,
+               dh-virtualenv (>= 0.6),
+               python-dev
+Standards-Version: 3.9.5
+
+Package: NX-RG-Portal
+Architecture: amd64
+Pre-Depends: dpkg (>= 1.16.1), python3.7, ${misc:Pre-Depends}
+Depends: nginx (>= 1.4.6)
+Description: Next version of RG portal.

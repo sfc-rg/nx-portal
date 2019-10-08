@@ -1,0 +1,18 @@
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+PIDFile=/run/gunicorn/pid
+User=ubuntu
+Group=ubuntu
+RuntimeDirectory=gunicorn
+WorkingDirectory=/home/ubuntu/portal/portal
+ExecStart=/home/ubuntu/portal/bin/gunicorn --pid /run/gunicorn/pid --bind unix:/run/gunicorn/socket portal.wsgi
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

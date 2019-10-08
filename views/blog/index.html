@@ -10,11 +10,12 @@
 {% for post in data %}
   <div class="row">
     <div class="col-md-12">
-        <div class="nx-card">
+        <a class="nx-disable-link-highlight" href="/blog?post_id={{ post.published_id }}">
+        <div class="nx-card nx-card-markdown">
           <h1>{{ post.title }}</h1>
-
-          {{ post.body }}
+          {{ post.blog_contents | truncatechars:120 | striptags | safe }}
         </div>
+        </a>
     </div>
   </div>
 {% endfor %}
