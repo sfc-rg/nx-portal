@@ -34,7 +34,7 @@ $nx-nav-height: 60px;
 
 .nx-active {
     a {
-        color: white !important;
+        color: #333 !important;
     }
 }
 
@@ -65,6 +65,13 @@ $nx-nav-height: 60px;
 
     .nx-nav-brand {
         color: rgb(167, 167, 255);
+    }
+
+
+    .nx-active {
+        a {
+            color: white !important;
+        }
     }
 }
 
