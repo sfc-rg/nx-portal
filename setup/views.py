@@ -23,4 +23,4 @@ class SetupProceedView(View):
         os.system("python manage.py migrate")
         #os.system("python manage.py collectstatic")
 
-        return redirect('/setup/init_setup/')
+        return redirect('/sys_console/init_setup/')
