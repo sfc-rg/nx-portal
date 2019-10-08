@@ -1,18 +1,24 @@
 //import boostrap's scss
 @import "~bootstrap/scss/bootstrap.scss";
 
+// Mixins
+@import "mixins";
+
+@import "theme";
+
 // Components
 @import "navbar";
 @import "card";
+@import "buttons";
+@import "typography";
 
 // Pages
 @import "pages/profile";
 
 
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background: black;
-        color: white;
-    }
+body {
+    background: var(--theme-base);
+    color: var(--theme-font);
 }
+

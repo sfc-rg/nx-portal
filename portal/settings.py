@@ -39,6 +39,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'setup.apps.SetupConfig',
     'blog.apps.BlogConfig',
     'meeting.apps.MeetingConfig',
     'account.apps.AccountConfig',
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webpack_loader',
+    'markdownx',
 ]
 
 MIDDLEWARE = [

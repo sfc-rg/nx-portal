@@ -6,12 +6,10 @@ $nx-nav-height: 60px;
     margin-top: 25px;
     margin-left: 27px;
     background: white;
-    height: $nx-nav-height;
-    width: 360px;
-    filter: drop-shadow(1px 2px 5px rgba(61, 61, 61, 0.233));
+    @include size(360px, $nx-nav-height);
+    @include shadow();
     padding-left: 25px;
     padding-right: 14px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +17,7 @@ $nx-nav-height: 60px;
 
 .nx-nav-brand {
     text-decoration: none;
-    color: white;
+    color: blue;
     font-weight: bold;
     font-size: 1.3rem;
 
@@ -36,7 +34,7 @@ $nx-nav-height: 60px;
 
 .nx-active {
     a {
-        color: rgb(207, 22, 22) !important;
+        color: #333 !important;
     }
 }
 
@@ -63,5 +61,67 @@ $nx-nav-height: 60px;
 @media (prefers-color-scheme: dark) {
     .nx-navbar {
         background: rgb(29, 29, 29);
+    }
+
+    .nx-nav-brand {
+        color: rgb(167, 167, 255);
+    }
+
+
+    .nx-active {
+        a {
+            color: white !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .nx-navbar {
+        position: fixed;
+        bottom: 15px;
+        z-index: 1000;
+        width: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .nx-nav-brand {
+        display: none;
+    }
+}
+
+
+
+
+.nx-footer-navigation {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    @include shadow();
+}
+
+@media (prefers-color-scheme: dark) {
+    .nx-footer-navigation {
+        background: rgb(32, 32, 32);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .nx-footer-navigation {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

@@ -22,5 +22,10 @@ from portal.views import (
 urlpatterns = [
     path('', HomeView.as_view()),
     path('profile/', include('account.urls')),
+    path('blog/', include('blog.urls')),
+    path('sys_console/', include('setup.urls')),
+
+    # Provided application url
     path('admin/', admin.site.urls),
+    path('markdownx/', include('markdownx.urls')),
 ]
