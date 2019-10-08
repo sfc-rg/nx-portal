@@ -47,3 +47,12 @@
 .nx-card-spacer {
     height: 50px;
 }
+
+
+.nx-card-markdown {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}

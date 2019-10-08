@@ -22,3 +22,13 @@ body {
     color: var(--theme-font);
 }
 
+
+.nx-disable-link-highlight {
+    text-decoration: none;
+    color: var(--theme-font);
+
+    &:hover {
+        text-decoration: none;
+        color: var(--theme-font);
+    }
+}

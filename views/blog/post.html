@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="nx-table-cell">
+  <h1 class="nx-page-heading">{{ title }}</h1>
+  <a class="nx-button-create" href="/blog/create/"><i class="far fa-edit"></i> Edit</a>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="nx-card nx-card-markdown">
+        {{ body }}
+      </div>
+    </div>
+</div>
+{% endblock %}

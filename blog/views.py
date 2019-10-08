@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.utils import html
 from django.views.generic import View
 
 from .models import (
@@ -6,12 +7,6 @@ from .models import (
 )
 
 import markdown
-from markdownx.utils import markdownify
-from markdownx.settings import (
-    MARKDOWNX_MARKDOWN_EXTENSIONS,
-    MARKDOWNX_MARKDOWN_EXTENSION_CONFIGS
-)
-from markdown.extensions import Extension
 
 
 
@@ -20,13 +15,25 @@ class BlogView(View):
 
     def get(self, request):
 
+        if "post_id" in request.GET:
+            post_id = request.GET.get("post_id")
+            post = Post.objects.filter(published_id=post_id).last()
+
+            context = {
+                'title': post.title,
+                'body': post.blog_contents,
+            }
+
+            return render(request, 'blog/post.html', context)
+
+
         posts = Post.objects.all()
+
         context = {
             'data': posts,
         }
 
         return render(request, 'blog/index.html', context)
-
 
 
 
