@@ -32,3 +32,9 @@ body {
         color: var(--theme-font);
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .editor-toolbar {
+        background: white;
+    }
+}
