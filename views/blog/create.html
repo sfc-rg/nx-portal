@@ -11,25 +11,29 @@
   }
 </style>
 
+
+<form method="post" action="/blog/create/">{% csrf_token %}
 <div class="row">
     <div class="col-md-12">
         <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" name="title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
     </div>
 </div>
 
 <div class="row">
   <div class="col-md-12">
-      <textarea class="form-control" id="exampleTextarea" rows="50"></textarea>
+      <textarea  name="body" class="form-control" id="exampleTextarea" rows="50"></textarea>
   </div>
 </div>
 
 <div class="nx-footer-navigation">
     <p style="margin: 0;">If you once return, current data will be cleared.</p>
-    <a class="nx-button-save " href="/blog/create/">Post</a>
+    <button class="nx-button-save" type="submit">Post</button>
 </div>
+
+</form>
 {% endblock %}
