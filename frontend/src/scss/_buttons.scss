@@ -31,3 +31,13 @@
         text-decoration: none;
     }
 }
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .nx-button-create {
+        @include inline-size(140px, 63px);
+    }
+}
