@@ -1,0 +1,39 @@
+
+
+{% load render_bundle from webpack_loader %}{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ APP_NAME }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% render_bundle 'main' 'css' %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form action="" method="POST">
+        <div class="col-md-8 offset-md-2">
+            <div class="nx-card">
+              {{ form.non_field_errors }}
+                {% for field in form %}
+                  {{ field }}
+
+                  {{ field.errors }}
+
+              {% endfor %}
+              <button type="submit" class="nx-button-create" >Login</button>
+              <input type="hidden" name="next" value="{{ next }}" />
+              {% csrf_token %}
+            </div>
+        </div>
+    </form>
+    </div>
+    {% render_bundle 'main' 'js' %}
+  </body>
+</html>

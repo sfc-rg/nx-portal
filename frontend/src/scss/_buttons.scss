@@ -29,12 +29,13 @@
     @include inline-size(160px, 63px);
     border-radius: 35px;
     @include shadow();
+    transition: all .2s;
 
     &:hover {
         text-decoration: none;
         color: tomato;
-        box-shadow: 0 0 0 6px tomato;
-
+        box-shadow: 0 0 0 4px tomato inset;
+        filter: none;
     }
 }
 

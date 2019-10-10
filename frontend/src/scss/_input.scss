@@ -1,0 +1,24 @@
+
+.nx-input {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgb(240, 240, 240);
+    @include size(100%, 60px);
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 7px tomato;
+  border: 1px solid tomato;
+}
