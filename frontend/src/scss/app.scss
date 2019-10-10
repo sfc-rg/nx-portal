@@ -11,6 +11,9 @@
 @import "card";
 @import "buttons";
 @import "typography";
+@import "markdown";
+@import "utils";
+
 
 // Pages
 @import "pages/profile";
@@ -30,11 +33,5 @@ body {
     &:hover {
         text-decoration: none;
         color: var(--theme-font);
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .editor-toolbar {
-        background: white;
     }
 }
