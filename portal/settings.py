@@ -39,6 +39,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'upload.apps.UploadConfig',
     'setup.apps.SetupConfig',
     'blog.apps.BlogConfig',
     'meeting.apps.MeetingConfig',

@@ -23,6 +23,7 @@ urlpatterns = [
     path('', HomeView.as_view()),
     path('account/', include('account.urls')),
     path('blog/', include('blog.urls')),
+    path('upload/', include('upload.urls')),
     path('sys_console/', include('setup.urls')),
 
     # Provided application url

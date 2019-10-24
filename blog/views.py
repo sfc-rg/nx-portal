@@ -31,6 +31,7 @@ class BlogView(View):
 
         context = {
             'data': posts,
+            'count': len(posts),
         }
 
         return render(request, 'blog/index.html', context)

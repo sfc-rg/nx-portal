@@ -2,18 +2,13 @@
 {% block content %}
 
 <div class="nx-table-cell">
-  <h1 class="nx-page-heading">Blog</h1>
+  <h1 class="nx-page-heading">Uploads</h1>
   <a class="nx-button-create" href="/blog/create/"><i class="fas fa-plus"></i> Create</a>
 </div>
 
 
 <div class="nx-spacer-3"></div>
 
-{% if count == 0 %}
-  <div class="row justify-content-center">
-    <p style="font-size:2rem;">There are no post!</p>
-  </div>
-{% endif %}
 
 {% for post in data %}
   <div class="row">
