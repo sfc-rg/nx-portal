@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="nx-spacer-3"></div>
+
+<div class="row justify-content-center">
+
+  <div id="droparea" class="nx-file-drop">
+    <h2>Drag & drop file here</h2>
+  </div>
+  <ul id="files"></ul>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var droparea = document.getElementById('droparea');
+
+    droparea.addEventListener('dragover', function(event) {
+      event.preventDefault();
+      event.dataTransfer.dropEffect = 'copy';
+      droparea.classList.add('nx-file-dragover');
+      console.log("DRAG OVER");
+    });
+
+    droparea.addEventListener('dragleave', function(event) {
+      droparea.classList.remove('nx-file-dragover');
+
+    });
+
+    droparea.addEventListener('drop', function(event) {
+      event.preventDefault();
+
+      var files = event.dataTransfer.files;
+    });
+  });
+  
+</script>
+{% endblock %}

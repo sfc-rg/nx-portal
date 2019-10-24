@@ -219,3 +219,4 @@ tmp/
 # Describe project specified ignore files or directories here.
 
 .vscode/
+webpack-stats.json

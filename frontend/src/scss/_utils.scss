@@ -1,0 +1,12 @@
+
+@mixin make-spacer($no) {
+    @for $i from 1 through $no {
+
+        .nx-spacer-#{$i} {
+            height: 10px * $i;
+        }
+    }
+}
+
+@include make-spacer(10);
+

@@ -1,0 +1,36 @@
+.nx-file-drop {
+    background: white;
+    border: solid 6px rgb(196, 196, 196);
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s　ease;
+    h2 {
+        color: #333;
+    }
+}
+
+.nx-file-dragover {
+    background: rgb(231, 231, 231);
+    border-color: rgb(63, 92, 255);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .nx-file-drop {
+        background: rgb(39, 39, 39);
+        border-color: rgb(61, 61, 61);
+        h2 {
+            color: #ffffff;
+        }
+    }
+    
+    .nx-file-dragover {
+        background: rgb(54, 54, 54);
+        border-color: rgb(63, 92, 255);
+    }
+    
+}
