@@ -1,0 +1,11 @@
+.nx-blog-bottom-description {
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 480px) {
+    .nx-blog-bottom-description {
+        content: '';
+    }
+}
