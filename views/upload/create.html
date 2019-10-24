@@ -5,12 +5,15 @@
 <div class="nx-spacer-3"></div>
 
 <div class="row justify-content-center">
-
   <div id="droparea" class="nx-file-drop">
-    <h2>Drag & drop file here</h2>
+    <h1><i class="far fa-file"></i> Drag & drop file here</h1>
   </div>
-  <ul id="files"></ul>
+</div>
 
+<div class="nx-spacer-4"></div>
+
+<div class="row justify-content-center">
+    <a class="nx-button-create" href="/upload/create/">Upload</a>
 </div>
 
 <script>
@@ -26,13 +29,13 @@
 
     droparea.addEventListener('dragleave', function(event) {
       droparea.classList.remove('nx-file-dragover');
-
     });
 
     droparea.addEventListener('drop', function(event) {
       event.preventDefault();
 
       var files = event.dataTransfer.files;
+      droparea.classList.remove('nx-file-dragover');
     });
   });
   

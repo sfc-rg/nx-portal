@@ -1,6 +1,5 @@
 .nx-file-drop {
-    background: white;
-    border: solid 6px rgb(196, 196, 196);
+    background: rgb(245, 245, 245);
     width: 80%;
     height: 300px;
     border-radius: 20px;
@@ -8,14 +7,13 @@
     justify-content: center;
     align-items: center;
     transition: all .3s　ease;
-    h2 {
-        color: #333;
+    h1 {
+        color: rgb(92, 92, 92);
     }
 }
 
 .nx-file-dragover {
-    background: rgb(231, 231, 231);
-    border-color: rgb(63, 92, 255);
+    background: rgb(163, 206, 255);
 }
 
 
