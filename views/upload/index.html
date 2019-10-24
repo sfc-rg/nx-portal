@@ -3,20 +3,20 @@
 
 <div class="nx-table-cell">
   <h1 class="nx-page-heading">Uploads</h1>
-  <a class="nx-button-create" href="/blog/create/"><i class="fas fa-plus"></i> Create</a>
+  <a class="nx-button-create" href="/upload/create/"><i class="fas fa-plus"></i> New File</a>
 </div>
 
 
 <div class="nx-spacer-3"></div>
 
 
-{% for post in data %}
+{% for upload in data %}
   <div class="row">
     <div class="col-md-12">
-        <a class="nx-disable-link-highlight" href="/blog?post_id={{ post.published_id }}">
+        <a class="nx-disable-link-highlight" href="">
         <div class="nx-card nx-card-markdown">
-          <h1>{{ post.title }}</h1>
-          {{ post.blog_contents | truncatechars:120 | striptags | safe }}
+          <h1>ファイル</h1>
+          ファイル
         </div>
         </a>
     </div>

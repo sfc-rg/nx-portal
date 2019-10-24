@@ -18,3 +18,31 @@ class UploadView(View):
         }
 
         return render(request, 'upload/index.html', context)
+
+
+
+
+class UploadCreateView(View):
+
+    def get(self, request):
+
+        context = {
+        }
+
+        return render(request, 'upload/create.html', context)
+
+    def post(self, request):
+
+        title = request.POST['title']
+        body = request.POST['body']
+
+
+        new = Post(
+            title = title,
+            is_published = True,
+            # created_by =
+            body = body,
+        )
+        new.save()
+
+        return redirect('/blog/')
