@@ -44,6 +44,8 @@ class BlogCreateView(View):
     def get(self, request):
 
         context = {
+            'restored_title': "ERROR",
+            'restored_body': "ERROR",
         }
 
         return render(request, 'blog/create.html', context)

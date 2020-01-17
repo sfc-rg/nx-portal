@@ -17,16 +17,21 @@
 }
 
 
-
 .nx-button-create {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #333;
     font-weight: bold;
     font-size: 1.7rem;
     text-decoration: none;
     text-align: center;
     background: white;
-    @include inline-size(160px, 63px);
+    min-width: 160px;
+    height: 63px;
+    padding-left: 28px;
+    padding-right: 28px;
+
     border-radius: 35px;
     @include shadow();
     transition: all .2s;
@@ -37,20 +42,28 @@
         box-shadow: 0 0 0 4px tomato inset;
         filter: none;
     }
+
+    i {
+        margin-right: 5px;
+    }
 }
+
 
 
 .nx-button-save {
     @include reset-button-style();
 
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-weight: bold;
     font-size: 1.7rem;
     text-decoration: none;
     text-align: center;
     background: tomato;
-    @include inline-size(115px, 45px);
+    width: 115px;
+    height: 45px;
     border-radius: 40px;
 
     &:hover {
@@ -64,8 +77,10 @@
 
 @media screen and (max-width: 480px) {
     .nx-button-create {
-        @include inline-size(140px, 63px);
-
+        min-width: 120px;
+        height: 50px;
         font-size: 1.4rem;
+        padding-left: 7px;
+        padding-right: 7px;
     }
 }

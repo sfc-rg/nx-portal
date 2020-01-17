@@ -5,34 +5,60 @@
 <div class="nx-spacer-3"></div>
 
 <div class="row justify-content-center">
-
   <div id="droparea" class="nx-file-drop">
-    <h2>Drag & drop file here</h2>
+    <h1 id="droparea-description"><i class="far fa-file"></i> Drag & drop file here</h1>
   </div>
-  <ul id="files"></ul>
+</div>
 
+
+<div class="row justify-content-center">
+    <ul id="filelist"></ul>
+</div>
+
+<div class="nx-spacer-4"></div>
+
+<div class="row justify-content-center">
+    <a class="nx-button-create" href="/upload/create/">Upload</a>
 </div>
 
 <script>
+
+  // Show erroe message if the browser does not support File API.
+  if (!window.File) {
+    document.getElementById('droparea-description').innerText = "This browser does not support File API!";
+  }
+  
+  var quedFiles = [];
+
   document.addEventListener('DOMContentLoaded', function () {
-    var droparea = document.getElementById('droparea');
+    var
+      droparea = document.getElementById('droparea');
+      filelist = document.getElementById('filelist');
+  
 
     droparea.addEventListener('dragover', function(event) {
       event.preventDefault();
       event.dataTransfer.dropEffect = 'copy';
       droparea.classList.add('nx-file-dragover');
-      console.log("DRAG OVER");
     });
 
     droparea.addEventListener('dragleave', function(event) {
       droparea.classList.remove('nx-file-dragover');
-
     });
 
     droparea.addEventListener('drop', function(event) {
       event.preventDefault();
 
       var files = event.dataTransfer.files;
+      droparea.classList.remove('nx-file-dragover');
+
+      for (var i = 0; i < files.length; i++) {
+        quedFiles.push(files[i]);
+      }
+
+      for (var i = 0; i < quedFiles.length; i++) {
+        filelist.innerHTML = '<li>' + quedFiles[i].name + '</li>';
+      }
     });
   });
   

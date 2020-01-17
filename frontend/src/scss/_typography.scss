@@ -1,3 +1,9 @@
 .nx-page-heading {
     font-size: 4rem;
 }
+
+@media screen and (max-width: 480px) {
+    .nx-page-heading {
+        font-size: 2rem;
+    }
+}
