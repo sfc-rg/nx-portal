@@ -4,8 +4,6 @@ import json
 
 class SlackNotificator():
 
-
-
     def shoot(self, text):
 
         try:
