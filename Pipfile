@@ -5,11 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
-pep8 = "*"
 mirage-django-lts = "*"
 pytest = "*"
 pytest-django = "*"
 flake8 = "*"
+autopep8 = "*"
+django-debug-toolbar = "*"
+pylint-django = "*"
 
 [packages]
 django = "*"
@@ -24,6 +26,10 @@ channels = "*"
 django-markdownx = "*"
 markdown = "*"
 django-initial-setup = "*"
+
+[scripts]
+lint = "flake8 --show-source ."
+format = "autopep8 -ivr --aggressive --aggressive ."
 
 [requires]
 python_version = "3.8"

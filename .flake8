@@ -1,0 +1,3 @@
+[flake8]
+exclude = shell, views, frontapp, frontend, .git, .tox, .venv, .eggs, build, dist, docs, tests/*, */migrations/*
+max-line-length = 120
