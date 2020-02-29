@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 
 try:
 
@@ -20,5 +21,5 @@ try:
                 'PORT': '5432',
             }
         }
-except:
+except BaseException:
     database_setting = {}

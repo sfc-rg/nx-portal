@@ -9,8 +9,6 @@ from .models import (
 import markdown
 
 
-
-
 class BlogView(View):
 
     def get(self, request):
@@ -26,7 +24,6 @@ class BlogView(View):
 
             return render(request, 'blog/post.html', context)
 
-
         posts = Post.objects.all()
 
         context = {
@@ -35,8 +32,6 @@ class BlogView(View):
         }
 
         return render(request, 'blog/index.html', context)
-
-
 
 
 class BlogCreateView(View):
@@ -55,12 +50,11 @@ class BlogCreateView(View):
         title = request.POST['title']
         body = request.POST['body']
 
-
         new = Post(
-            title = title,
-            is_published = True,
+            title=title,
+            is_published=True,
             # created_by =
-            body = body,
+            body=body,
         )
         new.save()
 

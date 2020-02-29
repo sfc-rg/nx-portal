@@ -10,7 +10,7 @@ from .models import (
 class UploadView(View):
 
     def get(self, request):
-        
+
         files = UploadFile.objects.all()
 
         context = {
@@ -18,8 +18,6 @@ class UploadView(View):
         }
 
         return render(request, 'upload/index.html', context)
-
-
 
 
 class UploadCreateView(View):
@@ -36,12 +34,11 @@ class UploadCreateView(View):
         title = request.POST['title']
         body = request.POST['body']
 
-
         new = Post(
-            title = title,
-            is_published = True,
+            title=title,
+            is_published=True,
             # created_by =
-            body = body,
+            body=body,
         )
         new.save()
 

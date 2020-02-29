@@ -19,9 +19,8 @@ from django.conf import settings
 from datetime import datetime
 
 
-
-import requests, json
-
+import requests
+import json
 
 
 class MeetingView(View):

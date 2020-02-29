@@ -8,15 +8,15 @@ from uuid import uuid4
 
 
 class Post(models.Model):
-    title = models.CharField(max_length = 255)
+    title = models.CharField(max_length=255)
     is_published = models.BooleanField()
     published_id = models.UUIDField(default=uuid4, editable=False)
     created_date = models.DateTimeField('Published Date', default=timezone.now)
-    created_by = models.CharField('Author', max_length = 255)
+    created_by = models.CharField('Author', max_length=255)
     body = models.TextField()
 
     class Meta:
-       ordering = ['-created_date']
+        ordering = ['-created_date']
 
     def __str__(self):
         return self.title

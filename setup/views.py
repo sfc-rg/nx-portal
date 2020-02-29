@@ -10,10 +10,9 @@ class SetupView(View):
 
     def get(self, request):
 
-        context = { }
+        context = {}
 
         return render(request, 'setup/index.html', context)
-
 
 
 class SetupProceedView(View):

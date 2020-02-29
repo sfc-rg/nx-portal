@@ -3,8 +3,8 @@ import os
 # SECURITY WARNING: keep the secret key used in production secret!
 try:
     SECRET_KEY = os.environ["PORTAL_SECRET_KEY"]
-except:
-    print("\033[31m"+ "************************************************************************")
+except BaseException:
+    print("\033[31m" + "************************************************************************")
     print("* [WARNING]                                                            *")
     print("* The secret key was not set!                                          *")
     print("* Use alternative hard coded key currently.                            *")

@@ -16,10 +16,8 @@ from .configs import *
 
 try:
     RUNNING_MODE = os.environ["PORTAL_RUNNING_MODE"]
-except:
+except BaseException:
     RUNNING_MODE = "devel"
-
-
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -70,7 +68,7 @@ ROOT_URLCONF = 'portal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['views',],
+        'DIRS': ['views', ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LOGIN_URL = '/account/login'
 LOGIN_REDIRECT_URL = '/'
- # LOGOUT_REDIRECT_URL = '/'
+# LOGOUT_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/

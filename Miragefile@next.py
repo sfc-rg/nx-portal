@@ -13,6 +13,7 @@ from mirage.confscript.settings import Settings
 MIRAGE_CONFIG_SCRIPT_VERSION = "0.0.1"
 MIRAGE_CONFIG_DEFAULT_CLASS = "MirageConfig"
 
+
 class MirageConfig(ConfigScript):
 
     BASIC_PROJECT = {
