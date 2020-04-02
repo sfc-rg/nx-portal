@@ -21,7 +21,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 import TimeCard from "./pages/TimeCard";
-import Checkout from "./pages/marketplace/Checkout";
+
 
 function Router() {
   return (
@@ -32,13 +32,6 @@ function Router() {
         <Route path="/m/signup" component={SignUp} />
         <Route path="/m/logout" component={Logout} />
         <Route path="/app/time" component={TimeCard} />
-
-
-        <Route path="/marketplace/tickets/reserve" component={Checkout} />
-
-
-
-
         <Route path="/page/terms-and-conditions" component={LicenseDoc} />
         <Route path="/page/privacy-policy" component={PrivacyPolicy} />
       </Switch>
