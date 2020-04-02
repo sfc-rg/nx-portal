@@ -1,23 +1,24 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
-import { APIClient } from "./services/APIClient";
+import { APIClient } from "../services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
 import {
     HeadingCard,
     AnimationHeading,
     GlidingThumb,
+    ArticleCard,
     AppContainer,
     Heading1
-} from "./AppComponent";
-import NavigationBar from "./pageComponents/NavBar/NavigationBar";
+} from "../AppComponent";
+import NavigationBar from "../pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
     AppDirItem,
     AppDirItemIcon,
     AppLabel
-} from "./pageComponents/AppDirectory/AppDirectory";
+} from "../pageComponents/AppDirectory/AppDirectory";
 
-import { Row } from "./components/Layout";
+import { Row } from "../components/Layout";
 
 // Assets
 import BlogIcon from "./assets/icons/BlogIcon.svg";
@@ -27,29 +28,21 @@ import TermIcon from "./assets/icons/TermIcon.svg";
 import MTGICon from "./assets/icons/MTGICon.svg";
 import ProfileIcon from "./assets/icons/ProfileIcon.svg";
 import ThesisIcon from "./assets/icons/ThesisIcon.svg";
-import RGRootIcon from "./assets/icons/RGRootIcon.svg";
+
 import styled from "styled-components";
 
-const ArticleDirectory = styled.div`
-    display: flex;
-    flex-direction: row;
-
-    overflow-x: scroll;
-`;
-
-const ArticleCard = styled.div`
+const FeaturedArticleCard = styled.div`
     width: 390px;
     height: 200px;
-    background: white;
+    background: #fff0f6;
     padding: 15px;
     padding-top: 3px;
     margin: 10px;
-    border-radius: 10px;
 `;
 
 // Page Componrnts
 // ------------------------------------------------------------------------------
-class App extends React.Component {
+class Blog extends React.Component {
     constructor(props) {
         super(props);
 
@@ -99,7 +92,7 @@ class App extends React.Component {
                 <NavigationBar>RG Portal</NavigationBar>
 
                 <AppContainer>
-                    <h2>Apps</h2>
+                    <h1>Apps</h1>
                     <AppDirectory>
                         <AppDirItem>
                             <AppDirItemIcon
@@ -148,58 +141,22 @@ class App extends React.Component {
                         <AppDirItem>
                             <AppDirItemIcon
                                 type="image/svg+xml"
-                                data={RGRootIcon}
-                            />
-                            <AppLabel>RGRoot Portal</AppLabel>
-                        </AppDirItem>
-
-                        <AppDirItem>
-                            <AppDirItemIcon
-                                type="image/svg+xml"
                                 data={ProfileIcon}
                             />
                             <AppLabel>My Account</AppLabel>
                         </AppDirItem>
                     </AppDirectory>
 
-             
+                    <h1>Information</h1>
+                    <p>
+                        徳田・村井・楠本・中村・高汐・バンミーター・植原・三次・中澤・武田合同研究プロジェクト(RG)のポータルサイトです。
+                        毎週木曜日の4限(2:45PM~4:15PM)と5限(4:30PM~6:00PM)にι23教室でRG全体授業を行っています。
+                    </p>
                     <h1>Update</h1>
-
-                    <ArticleDirectory>
-                        <ArticleCard>
-                            <h3>新しいポータルについて</h3>
-                            <p>
-                                RGポータルはリニューアルしました。詳しい使い方は後ほど載せますうん
-                            </p>
-                        </ArticleCard>
-                        <ArticleCard>
-                            <h3>新しいポータルについて</h3>
-                            <p>
-                                RGポータルはリニューアルしました。詳しい使い方は後ほど載せますうん
-                            </p>
-                        </ArticleCard>
-                        <ArticleCard>
-                            <h3>新しいポータルについて</h3>
-                            <p>
-                                RGポータルはリニューアルしました。詳しい使い方は後ほど載せますうん
-                            </p>
-                        </ArticleCard>
-                        <ArticleCard>
-                            <h3>新しいポータルについて</h3>
-                            <p>
-                                RGポータルはリニューアルしました。詳しい使い方は後ほど載せますうん
-                            </p>
-                        </ArticleCard>
-                       
-                       
-                       
-                       
-                       
-                    </ArticleDirectory>
                 </AppContainer>
             </>
         );
     }
 }
 
-export default withTranslation()(App);
+export default withTranslation()(Blog);

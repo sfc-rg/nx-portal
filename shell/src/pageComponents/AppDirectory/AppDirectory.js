@@ -14,8 +14,10 @@ export const AppDirItem = styled.div`
     margin-right: 20px;
     display: flex;
     flex-direction: column;
+
     &:hover {
         background: #dbdbdb;
+        border-radius: 8px;
     }
 `;
 
@@ -29,4 +31,5 @@ export const AppDirItemIcon = styled.object`
 export const AppLabel = styled.span`
     width: 100%;
     text-align: center;
+    font-weight: 500;
 `;
