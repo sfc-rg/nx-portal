@@ -1,26 +1,88 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { withTranslation } from "react-i18next";
+import { APIClient } from "./services/APIClient";
+// import { AuthOnlyView } from "./services/Auth";
+import {
+  HeadingArea,
+  HeadingCard,
+  AnimationHeading,
+  GlidingThumb,
+  ArticleCard,
+  AppContainer,
+  Heading1
+} from "./AppComponent";
+import TopNavigation from "./pageComponents/Navigation";
+import { Row } from "./components/Layout";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Assets
+
+
+import styled from "styled-components";
+
+const FeaturedArticleCard = styled.div`
+  width: 390px;
+  height: 200px;
+  background: #fff0f6;
+  padding: 15px;
+  padding-top: 3px;
+  margin: 10px;
+`;
+
+// Page Componrnts
+// ------------------------------------------------------------------------------
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: [],
+      originUrl: "",
+      articles: []
+    };
+  }
+
+  fetchAPI() {
+    APIClient.GET("/api/articles", data => {
+      this.setState({
+        articles: data
+      });
+    });
+  }
+
+  linkTo(path) {
+    window.location.href = "/article/" + path;
+  }
+
+  composeArticleCard(value) {
+    return (
+      <Row>
+        <ArticleCard>
+          <h1>{value[0].title}</h1>
+          <p>{value[0].description}</p>
+        </ArticleCard>
+        <ArticleCard>
+          <h1>{value[1].title}</h1>
+          <p>{value[1].description}</p>
+        </ArticleCard>
+      </Row>
+    );
+  }
+
+  componentDidMount() {
+    this.fetchAPI();
+  }
+
+  render() {
+    const { t } = this.props;
+
+    return (
+      <>
+        <TopNavigation>RG Portal</TopNavigation>
+        <HeadingArea></HeadingArea>
+        <AppContainer></AppContainer>
+      </>
+    );
+  }
 }
 
-export default App;
+export default withTranslation()(App);
