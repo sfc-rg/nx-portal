@@ -1,0 +1,25 @@
+{
+    "Title": "Terms and Conditions",
+    "LanguageWarning": "This terms of document is partially translated origin from Japanese.  Only original Japanese script is effective.",
+    "Predescription": "This terms of conditions（hereinafter referred to as \"Terms and Conditions\") set the terms and condition about providing services （hereinafter referred to as \" this service\") on this web site by 2ooU! Share Team（hereinafter referred to as \"Operation Team\"). All registered users （hereinafter referred to as \"users\") shall be in under this Terms and Conditions shown here.",
+    "Applies": {
+        "Heading": "1. Apply",
+        "1": "This Terms and Condition  shall apply to any relationship for using this service between users and Operation team.",
+        "2": "In addition to this Terms of Conditions, Operation Team will make various rules (hereinafter referred to as \"individual rules\") such as other rules for use.",
+        "3": "If the provisions of this Terms and Conditions contradict the individual provisions of the previous article, the individual provisions shall take precedence unless otherwise specified in the individual provisions."
+    },
+    "Register": {
+        "Heading": "2. Registration",
+        "1": "In this service, the applicant for registration agrees to this Terms and Conditions and applies for usage registration according to the method specified by the Operation Team, and the usage registration is completed when the Operation Team notifies the applicant for registration of this approval.",
+        "2": "The Operation Team may not approve the application for registration if it is judged that the applicant who submitted use registration has following reasons, and shall not be obliged to disclose any reasons.",
+        "2-1": "When reporting false information when applying for use registration",
+        "2-2": "When the application is from a person who has violated any terms or licenses applied by the Operation Team.",
+        "2-3": "When it is judged that the operation is not worth the registration"
+    },
+    "AccountManagement": {
+        "Heading": "3. User ID and password management",
+        "1": "The user shall appropriately manage the user ID and the password of this service at his / her own risk. The Operation Team shall not be liable for any loss of ID or password due to user error. ",
+        "2": "In any case, the user cannot transfer or rent the user ID and the password to a third party, or share it with a third party. The Operation Team authenticate user identification and considered as to be used by the user who has registered the account when the combination of the user ID and password matches the registred information.",
+        "3": "ユーザーID及びパスワードが第三者によって使用されたことによって生じた損害は，運営に故意又は重大な過失がある場合を除き，運営は一切の責任を負わないものとします。"
+    }
+}

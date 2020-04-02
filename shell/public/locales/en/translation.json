@@ -1,0 +1,20 @@
+{
+    "Top": {
+        "Message": "Find your favorite lessons",
+        "Button": "Search",
+        "Signin": "Sign In",
+        "Logout": "Logout"
+    },
+    "Card": {
+        "InitMessage": "Search results"
+    },
+    "Error": {
+        "EmptyURL": "Empty URL!",
+        "InvalidURL": "Invalid URL! Specify a URL starting with http or https."
+    },
+    "Profile": {
+        "Message": {
+            "Description": "Create your own profile link or page!"
+        }
+    }
+}
