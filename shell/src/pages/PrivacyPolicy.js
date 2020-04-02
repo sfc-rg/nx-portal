@@ -8,9 +8,7 @@ class PrivacyPolicy extends React.Component {
     render() {
         return (
             <>
-                <NavigationBar>
-                Privacy Policy
-                </NavigationBar>
+                <NavigationBar>Privacy Policy</NavigationBar>
                 <MarginSparcer />
                 <Container>
                     <Row>

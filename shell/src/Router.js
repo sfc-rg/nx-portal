@@ -14,8 +14,6 @@ import SignUp from "./pages/SignUp";
 import LicenseDoc from "./pages/License";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
-
-
 function Router() {
     return (
         <BrowserRouter>

@@ -9,7 +9,6 @@ class LicenseDoc extends React.Component {
     render() {
         return (
             <>
-                
                 <NavigationBar>RG Portal</NavigationBar>
 
                 <MarginSparcer />

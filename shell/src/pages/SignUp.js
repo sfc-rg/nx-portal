@@ -1,5 +1,5 @@
 import React from "react";
-import  NavigationBar   from "../pageComponents/NavigationBar";
+import NavigationBar from "../pageComponents/NavigationBar";
 import { Button } from "../components/Buttons";
 import { withTranslation } from "react-i18next";
 import { MarginSparcer, Container, Row } from "../components/Grid";
@@ -145,9 +145,7 @@ class SignUp extends React.Component {
 
         return (
             <>
-                <NavigationBar>
-                RG Portal
-                </NavigationBar>
+                <NavigationBar>RG Portal</NavigationBar>
                 <Container>
                     <Row>
                         {this.state.currentPage === "email" && (

@@ -179,9 +179,7 @@ class Login extends React.Component {
 
         return (
             <>
-                <NavigationBar>
-                    RG Portal
-                </NavigationBar>
+                <NavigationBar>RG Portal</NavigationBar>
                 <Container>
                     <Row>
                         {this.state.currentPage === "email" && (
