@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="651px" height="796px" viewBox="0 0 651 796" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-10.5%" y="-7.6%" width="121.1%" height="116.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="96.832099%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FFFDE6" offset="0%"></stop>
+            <stop stop-color="#FCEC90" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0" y="0" width="551" height="694" rx="40"></rect>
+        <filter x="-13.5%" y="-10.4%" width="127.0%" height="121.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="24.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.836814413   0 0 0 0 0.836814413   0 0 0 0 0.836814413  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="4.73034468%" x2="50%" y2="97.6118501%" id="linearGradient-5">
+            <stop stop-color="#FCDB7F" offset="0%"></stop>
+            <stop stop-color="#FFBB00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#9B9B9C" offset="0%"></stop>
+            <stop stop-color="#4A4E55" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-7">
+            <stop stop-color="#5D5D5D" offset="0%"></stop>
+            <stop stop-color="#878787" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(-84.000000, -16.000000)">
+            <rect id="Rectangle-5" x="0" y="0" width="819" height="819"></rect>
+            <g id="Group-9" transform="translate(134.000000, 63.000000)">
+                <g id="Notes-Icon" filter="url(#filter-1)">
+                    <g id="Group-2">
+                        <g id="Rectangle-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M30,0 L521,0 C537.568542,-3.04359188e-15 551,13.4314575 551,30 L551,118 L0,118 L0,30 C-2.02906125e-15,13.4314575 13.4314575,3.04359188e-15 30,0 Z" id="Rectangle-3" fill="url(#linearGradient-5)"></path>
+                        <path d="M36.5,188.25 L514.5,188.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M36.5,222.25 L514.5,222.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M36.5,256.25 L514.5,256.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M36.5,290.25 L514.5,290.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M36.5,324.25 L514.5,324.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M36.5,358.25 L514.5,358.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,392.25 L515.5,392.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,426.25 L515.5,426.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,460.25 L515.5,460.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,494.25 L515.5,494.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,528.25 L515.5,528.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,562.25 L515.5,562.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,596.25 L515.5,596.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        <path d="M37.5,630.25 L515.5,630.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(416.138206, 466.649661) rotate(28.000000) translate(-416.138206, -466.649661) translate(389.138206, 312.649661)">
+                    <rect id="Rectangle-7" fill="url(#linearGradient-6)" x="0.819306867" y="0.433365883" width="53" height="244.939276" rx="12"></rect>
+                    <path d="M30.5652476,251.659016 L50.763932,292.056385 C51.9988783,294.526278 50.9977565,297.529643 48.527864,298.764589 C47.8335869,299.111728 47.0680215,299.292453 46.2917961,299.292453 L9.47213595,299.292453 C6.71071221,299.292453 4.47213595,297.053877 4.47213595,294.292453 C4.47213595,293.516228 4.65286141,292.750662 5,292.056385 L25.1986844,251.659016 C25.9396522,250.177081 27.7416713,249.576408 29.2236068,250.317376 C29.804189,250.607667 30.2749565,251.078434 30.5652476,251.659016 Z" id="Triangle" fill="url(#linearGradient-7)" transform="translate(27.882076, 274.646227) scale(-1, -1) translate(-27.882076, -274.646227) "></path>
+                    <circle id="Oval-3" stroke="#F2F2F2" fill="#5E5E5E" cx="28" cy="305" r="3"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="867px" height="866px" viewBox="0 0 867 866" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="49.0282246%" y2="95.657966%" id="linearGradient-1">
+            <stop stop-color="#005AE0" offset="0%"></stop>
+            <stop stop-color="#50A4FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FAD961" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M186.154292,752.535026 L261.763511,636.107037 C304.11071,663.708383 354.682219,679.748076 409,679.748076 C558.116882,679.748076 679,558.864959 679,409.748076 C679,407.017102 678.959454,404.295597 678.878931,401.584132 L818.635472,391.811416 C818.877684,397.593453 819,403.406481 819,409.248076 C819,635.408682 635.660605,818.748076 409.5,818.748076 C327.102198,818.748076 250.388424,794.411856 186.154292,752.535026 Z M160.028353,734.010932 C62.7133996,659.145376 0,541.520476 0,409.248076 C0,188.950398 173.956924,9.28253673 392,0.115262563 L392,140.274585 C250.802945,149.046881 139,266.34099 139,409.748076 C139,493.034925 176.710724,567.513961 235.988914,617.041927 L160.028353,734.010932 Z M676.050886,369.703761 C657.42279,244.410353 552.71674,147.205912 424,140.157702 L424,0 C626.888669,7.06076156 792.259744,161.716826 816.058583,359.913469 L676.050886,369.703761 Z" id="path-3"></path>
+        <filter x="-4.4%" y="-4.4%" width="108.8%" height="108.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.443372662   0 0 0 0 0.443372662   0 0 0 0 0.443372662  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-15" transform="translate(24.000000, 24.000000)">
+            <circle id="Oval" fill="url(#linearGradient-1)" cx="409.5" cy="409.5" r="240.5"></circle>
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <path d="M409.765582,541.71875 C389.743763,541.71875 378.32391,529.853968 378.32391,508.79398 L378.32391,374.128704 L346.733928,374.128704 C330.123233,374.128704 319,365.081808 319,349.064352 C319,333.046896 329.826614,324 346.733928,324 L472.797237,324 C489.704551,324 500.531165,333.046896 500.531165,349.064352 C500.531165,365.081808 489.407932,374.128704 472.797237,374.128704 L441.207255,374.128704 L441.207255,508.79398 C441.207255,529.853968 429.787402,541.71875 409.765582,541.71875 Z" id="T" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
