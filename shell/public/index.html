@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="RG Portal" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RG Portal" />
+  <meta property="og:title" content="naraii" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="RG Portal" />
+  <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/assets/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/assets/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/assets/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/assets/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/assets/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/assets/apple-touch-icon-180x180.png" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="%PUBLIC_URL%/favicon.ico"　/>
+ 
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +34,40 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>RG Portal</title>
+</head>
+
+<body>
+  <!-- Contents when JavaScript disabled-->
+  <noscript>
+    <style>
+      body {
+        background: #fc3f44; }
+      h1, h2, p {
+        color: #fff;
+        margin-left: 1em;
+        font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; }
+      h1 {
+        font-size: 4rem;
+        margin-left: 0.5em; }
+      strong {
+        font-weight: 900; }
+      p {
+        font-weight: bold;
+        font-size: 1.8rem; }
+    </style>
+
+    <h1><strong>JavaScript</strong> is disabled!</h1>
+
+    <p>
+      You need to enable <strong>JavaScript</strong> to see this page.
+    </p>
+    <p>
+      このページを見るには<strong>JavaScript</strong>を有効にする必要があります。
+    </p>
+  </noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +77,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+</body>
 </html>
