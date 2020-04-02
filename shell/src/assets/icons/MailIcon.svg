@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="798px" height="596px" viewBox="0 0 798 596" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="49.9548577%" y1="4.44364162%" x2="48.9841145%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#619EFB" offset="0%"></stop>
+            <stop stop-color="#0E64C1" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="760" height="558" rx="52"></rect>
+        <filter x="-3.9%" y="-4.9%" width="107.8%" height="110.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.457164116   0 0 0 0 0.457164116   0 0 0 0 0.457164116  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0.909873188" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M65.0552305,35 L693.35481,35 C703.295936,35 711.35481,43.0588745 711.35481,53 C711.35481,58.3003842 709.018701,63.3313405 704.969375,66.7514324 L421.765615,305.947482 C400.446713,323.953589 369.32747,324.225746 347.696904,306.595259 L53.6829537,66.9524665 C45.9772193,60.6717314 44.822029,49.3334577 51.102764,41.6277232 C54.5211154,37.433802 59.6446759,35 65.0552305,35 Z" id="path-5"></path>
+        <filter x="-1.4%" y="-3.3%" width="102.9%" height="106.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="9" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.567814626   0 0 0 0 0.567814626   0 0 0 0 0.567814626  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-22" transform="translate(-11.000000, -108.000000)">
+            <g id="Group-12" transform="translate(30.000000, 125.000000)">
+                <g id="Group-11">
+                    <g id="Group-3">
+                        <g id="Rectangle-6">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="Rectangle-6">
+                            <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <rect id="Rectangle-5" x="0" y="0" width="819" height="819"></rect>
+        </g>
+    </g>
+</svg>

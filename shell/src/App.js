@@ -28,6 +28,7 @@ import MTGICon from "./assets/icons/MTGICon.svg";
 import ProfileIcon from "./assets/icons/ProfileIcon.svg";
 import ThesisIcon from "./assets/icons/ThesisIcon.svg";
 import RGRootIcon from "./assets/icons/RGRootIcon.svg";
+import MailIcon from "./assets/icons/MailIcon.svg";
 import styled from "styled-components";
 
 const ArticleDirectory = styled.div`
@@ -152,6 +153,16 @@ class App extends React.Component {
                             />
                             <AppLabel>RGRoot Portal</AppLabel>
                         </AppDirItem>
+
+                        <AppDirItem>
+                            <AppDirItemIcon
+                                type="image/svg+xml"
+                                data={MailIcon}
+                            />
+                            <AppLabel>RG Mail</AppLabel>
+                        </AppDirItem>
+
+                        
 
                         <AppDirItem>
                             <AppDirItemIcon
