@@ -20,6 +20,7 @@ from portal.views import (
 )
 
 urlpatterns = [
+    path('', include('webprovider.urls')),
     path('', HomeView.as_view()),
     path('account/', include('account.urls')),
     path('blog/', include('blog.urls')),
@@ -29,4 +30,5 @@ urlpatterns = [
     # Provided application url
     path('admin/', admin.site.urls),
     path('markdownx/', include('markdownx.urls')),
+    path('', include('first_setup.urls')),
 ]
