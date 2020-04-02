@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import NavigationBar from "../pageComponents/NavigationBar";
+import NavigationBar from "../pageComponents/NavBar/NavigationBar";
 import { Button } from "../components/Buttons";
 import { withTranslation } from "react-i18next";
 import { MarginSparcer, Container, Row } from "../components/Grid";

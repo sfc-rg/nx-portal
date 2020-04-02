@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, MarginSparcer } from "../components/Grid";
 
-import NavigationBar from "../pageComponents/NavigationBar";
+import NavigationBar from "../pageComponents/NavBar/NavigationBar";
 
 import TermDoc from "../components/Terms";
 

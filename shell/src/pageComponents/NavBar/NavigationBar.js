@@ -10,7 +10,7 @@ import {
     NavLink
 } from "./NavigationBarCommon";
 import { withTranslation } from "react-i18next";
-import { AuthOnlyView } from "../services/Auth";
+import { AuthOnlyView } from "../../services/Auth";
 
 class NavigationBar extends React.Component {
     render() {
