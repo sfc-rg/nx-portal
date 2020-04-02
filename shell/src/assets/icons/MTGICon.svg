@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="867px" height="867px" viewBox="0 0 867 867" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="84.2323756%" y1="17.9597624%" x2="15.6054213%" y2="84.2677074%" id="linearGradient-1">
+            <stop stop-color="#4784F2" offset="0%"></stop>
+            <stop stop-color="#205CFF" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="409.5" cy="409.5" r="409.5"></circle>
+        <filter x="-4.5%" y="-4.5%" width="108.9%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.443372662   0 0 0 0 0.443372662   0 0 0 0 0.443372662  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(24.000000, 24.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use stroke="#296AF7" stroke-width="1" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Group-16" transform="translate(334.000000, 119.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-8" x="0" y="0" width="151" height="105" rx="52"></rect>
+                <rect id="Rectangle-8" x="0" y="477" width="151" height="105" rx="52"></rect>
+            </g>
+            <g id="Group-16" transform="translate(409.500000, 410.000000) rotate(90.000000) translate(-409.500000, -410.000000) translate(334.000000, 119.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-8" x="0" y="0" width="151" height="105" rx="52"></rect>
+                <rect id="Rectangle-8" x="0" y="477" width="151" height="105" rx="52"></rect>
+            </g>
+            <g id="Group-16" transform="translate(409.500000, 410.000000) rotate(45.000000) translate(-409.500000, -410.000000) translate(334.000000, 119.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-8" x="0" y="0" width="151" height="105" rx="52"></rect>
+                <rect id="Rectangle-8" x="0" y="477" width="151" height="105" rx="52"></rect>
+            </g>
+            <g id="Group-16" transform="translate(409.500000, 410.000000) rotate(-45.000000) translate(-409.500000, -410.000000) translate(334.000000, 119.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-8" x="0" y="0" width="151" height="105" rx="52"></rect>
+                <rect id="Rectangle-8" x="0" y="477" width="151" height="105" rx="52"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

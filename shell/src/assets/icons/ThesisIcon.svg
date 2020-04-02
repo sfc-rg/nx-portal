@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="698px" height="796px" viewBox="0 0 698 796" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 20</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-10.5%" y="-7.6%" width="121.1%" height="116.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="96.832099%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FFFDE6" offset="0%"></stop>
+            <stop stop-color="#FCEC90" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="0" y="0" width="551" height="694" rx="40"></rect>
+        <filter x="-13.5%" y="-10.4%" width="127.0%" height="121.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="24.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.836814413   0 0 0 0 0.836814413   0 0 0 0 0.836814413  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="48.9841145%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#FFC00F" offset="0%"></stop>
+            <stop stop-color="#E5AD57" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-6" cx="382" cy="256" r="19"></circle>
+        <filter x="-18.4%" y="-13.2%" width="136.8%" height="136.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#818181" offset="0%"></stop>
+            <stop stop-color="#474747" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.6452312%" id="linearGradient-9">
+            <stop stop-color="#898989" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-20" transform="translate(-84.000000, -16.000000)">
+            <g id="Group-10">
+                <rect id="Rectangle-5" x="0" y="0" width="819" height="819"></rect>
+                <g id="Group-9" transform="translate(134.000000, 63.000000)">
+                    <g id="Notes-Icon" filter="url(#filter-1)">
+                        <g id="Group-2">
+                            <g id="Rectangle-3">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <path d="M36.5,188.25 L514.5,188.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M36.5,222.25 L514.5,222.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M36.5,256.25 L514.5,256.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M36.5,290.25 L514.5,290.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M36.5,324.25 L514.5,324.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M36.5,358.25 L514.5,358.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,392.25 L515.5,392.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,426.25 L515.5,426.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,460.25 L515.5,460.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,494.25 L515.5,494.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,528.25 L515.5,528.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,562.25 L515.5,562.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,596.25 L515.5,596.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                            <path d="M37.5,630.25 L515.5,630.25" id="Line" stroke="#A9A9A9" stroke-linecap="square"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-19" transform="translate(356.000000, 239.000000)">
+                <rect id="Rectangle-11" fill="url(#linearGradient-5)" x="376" y="156" width="11" height="100"></rect>
+                <g id="Oval-8">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <use fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                </g>
+                <path d="M131,78.9999946 L295.000001,78.9999944 C323.166523,78.9999944 346.000001,101.833472 346.000001,129.999994 L345.999999,280.051921 C345.999999,296.000686 338.53907,311.031146 325.835665,320.674103 C288.223777,349.224701 250.611888,363.5 213,363.5 C175.388111,363.5 137.776223,349.224701 100.164334,320.674102 L100.164334,320.674102 C87.460929,311.031145 80,296.000685 80,280.05192 L80,129.999995 C80,101.833472 102.833478,78.9999946 131,78.9999946 Z" id="Rectangle-10" fill="url(#linearGradient-8)"></path>
+                <path d="M425.132034,147 L213,293.5 L0.867965644,147 L213,0.5 L425.132034,147 Z" id="Combined-Shape" fill="url(#linearGradient-9)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
