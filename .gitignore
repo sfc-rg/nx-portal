@@ -220,3 +220,4 @@ tmp/
 
 .vscode/
 webpack-stats.json
+.DS_Store
