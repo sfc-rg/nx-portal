@@ -3,7 +3,6 @@ import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
 import {
-  HeadingArea,
   HeadingCard,
   AnimationHeading,
   GlidingThumb,
@@ -78,7 +77,7 @@ class App extends React.Component {
     return (
       <>
         <TopNavigation>RG Portal</TopNavigation>
-        <HeadingArea></HeadingArea>
+
         <AppContainer></AppContainer>
       </>
     );

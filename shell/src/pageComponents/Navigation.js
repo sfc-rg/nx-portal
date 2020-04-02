@@ -43,7 +43,7 @@ class TopNavigation extends React.Component {
     return (
       <Navigation style={this.props.extraStyle}>
         <NavBrandArea href="/">
-          {this.props.children}
+          <NavBrand>{this.props.children}</NavBrand>
         </NavBrandArea>
         <NavArea>
           <NavItems>

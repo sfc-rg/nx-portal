@@ -7,24 +7,6 @@ const mediaMobile = mediaQuery.lessThan("medium");
 
 /// Page specific components
 // ------------------------------------------------------------------------------
-export const HeadingArea = styled.div`
-  width: 100%;
-  height: 520px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  &::after {
-    content: "";
-    background-color: rgba(255, 254, 242, 0.342);
-    position: absolute;
-    width: 100%;
-    height: 520px;
-  }
-  ${mediaMobile`
-    height: 250px;
-  `}
-`;
-
 export const GlidingThumb = styled.img`
   height: 520px;
   object-fit: cover;
