@@ -1,13 +1,14 @@
 import React from "react";
 
 import {
+    NavBrandArea,
+    NavBrandLogo,
     Navigation,
     NavBrand,
     NavArea,
     NavItems,
     NavLink
-} from "../components/Navigation";
-import { NavBrandArea, NavBrandLogo } from "./NavigationBarCommon";
+} from "./NavigationBarCommon";
 import { withTranslation } from "react-i18next";
 import { AuthOnlyView } from "../services/Auth";
 

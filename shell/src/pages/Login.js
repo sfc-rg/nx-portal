@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Navigation, NavBrand } from "../components/Navigation";
+import NavigationBar from "../pageComponents/NavigationBar";
 import { Button } from "../components/Buttons";
 import { withTranslation } from "react-i18next";
 import { MarginSparcer, Container, Row } from "../components/Grid";
@@ -179,9 +179,9 @@ class Login extends React.Component {
 
         return (
             <>
-                <Navigation>
-                    <NavBrand>RG Portal</NavBrand>
-                </Navigation>
+                <NavigationBar>
+                    RG Portal
+                </NavigationBar>
                 <Container>
                     <Row>
                         {this.state.currentPage === "email" && (

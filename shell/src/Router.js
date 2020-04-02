@@ -14,7 +14,7 @@ import SignUp from "./pages/SignUp";
 import LicenseDoc from "./pages/License";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
-import TimeCard from "./pages/TimeCard";
+
 
 function Router() {
     return (
@@ -24,7 +24,7 @@ function Router() {
                 <Route path="/m/signin" component={Login} />
                 <Route path="/m/signup" component={SignUp} />
                 <Route path="/m/logout" component={Logout} />
-                <Route path="/app/time" component={TimeCard} />
+
                 <Route
                     path="/page/terms-and-conditions"
                     component={LicenseDoc}

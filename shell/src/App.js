@@ -10,7 +10,7 @@ import {
     AppContainer,
     Heading1
 } from "./AppComponent";
-import TopNavigation from "./pageComponents/Navigation";
+import NavigationBar from "./pageComponents/NavigationBar";
 import { Row } from "./components/Layout";
 
 // Assets
@@ -75,7 +75,7 @@ class App extends React.Component {
 
         return (
             <>
-                <TopNavigation>RG Portal</TopNavigation>
+                <NavigationBar>RG Portal</NavigationBar>
 
                 <AppContainer></AppContainer>
             </>
