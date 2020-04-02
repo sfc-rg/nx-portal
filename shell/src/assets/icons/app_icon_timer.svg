@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="867px" height="867px" viewBox="0 0 867 867" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Time Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="84.2323756%" y1="17.9597624%" x2="15.6054213%" y2="84.2677074%" id="linearGradient-1">
+            <stop stop-color="#4784F2" offset="0%"></stop>
+            <stop stop-color="#205CFF" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="409.5" cy="409.5" r="409.5"></circle>
+        <filter x="-4.5%" y="-4.5%" width="108.9%" height="108.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="3" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.443372662   0 0 0 0 0.443372662   0 0 0 0 0.443372662  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="3.02790824%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#D5D5D5" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="106.297715%" gradientTransform="translate(0.500000,0.500000),rotate(90.000000),scale(1.000000,0.857424),translate(-0.500000,-0.500000)" id="radialGradient-5">
+            <stop stop-color="#333333" offset="0%"></stop>
+            <stop stop-color="#282828" offset="5.23618136%"></stop>
+            <stop stop-color="#7D7D7D" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Time-Icon" transform="translate(24.000000, 24.000000)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use stroke="#296AF7" stroke-width="1" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <circle id="Oval" fill="url(#linearGradient-4)" cx="409.5" cy="409.5" r="315.5"></circle>
+            <rect id="Rectangle" fill="#292929" x="396" y="127" width="28" height="289" rx="14"></rect>
+            <rect id="Rectangle" fill="#292929" transform="translate(478.501822, 470.400791) rotate(130.000000) translate(-478.501822, -470.400791) " x="464.501822" y="374.449706" width="28" height="191.902171" rx="14"></rect>
+            <circle id="Oval-2" fill="url(#radialGradient-5)" cx="409.5" cy="409.5" r="29.5"></circle>
+        </g>
+    </g>
+</svg>
