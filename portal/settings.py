@@ -31,12 +31,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ('*', )
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'webprovider.apps.WebproviderConfig',
     'upload.apps.UploadConfig',
     'setup.apps.SetupConfig',
     'blog.apps.BlogConfig',
@@ -48,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheaders',
     'first_setup',
     'markdownx',
 ]
@@ -61,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'portal.urls'
@@ -142,16 +147,52 @@ MIDDLEWARE_CLASSES = (
     'whitenoise.middleware.WhiteNoiseMiddleware',
 )
 
-STATIC_URL = '/static/'
+STATIC_URL = '/files/'
+
+
 
 
 if RUNNING_MODE == "devel":
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'frontend'),
+        os.path.join(BASE_DIR, 'shell', 'build'),
     )
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'frontend'),
+        os.path.join(BASE_DIR, 'shell', 'build'),
     )
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # Simple JWTの読み込み
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
+    ],
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+    ]
+}
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = (
+    'http://127.0.0.1:3000',
+)
+
+CORS_ALLOW_CREDENTIALS = True
+
+if DEBUG:
+    def show_toolbar(request):
+        return True
+
+    INSTALLED_APPS += (
+        'debug_toolbar',
+    )
+    MIDDLEWARE += (
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
+    )
+    DEBUG_TOOLBAR_CONFIG = {
+        'SHOW_TOOLBAR_CALLBACK': show_toolbar,
+    }
