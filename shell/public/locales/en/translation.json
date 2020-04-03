@@ -1,4 +1,5 @@
 {
   "app": "App",
-  "signin": "Sign in"
+  "signin": "Sign in",
+  "?": "Logout"
 }
