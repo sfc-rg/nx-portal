@@ -3,8 +3,6 @@ import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
 import {
-    HeadingCard,
-    AnimationHeading,
     GlidingThumb,
     AppContainer,
     Heading1
@@ -73,21 +71,6 @@ class App extends React.Component {
         window.location.href = "/article/" + path;
     }
 
-    composeArticleCard(value) {
-        return (
-            <Row>
-                <ArticleCard>
-                    <h1>{value[0].title}</h1>
-                    <p>{value[0].description}</p>
-                </ArticleCard>
-                <ArticleCard>
-                    <h1>{value[1].title}</h1>
-                    <p>{value[1].description}</p>
-                </ArticleCard>
-            </Row>
-        );
-    }
-
     componentDidMount() {
         this.fetchAPI();
     }
@@ -100,7 +83,7 @@ class App extends React.Component {
                 <NavigationBar>RG Portal</NavigationBar>
 
                 <AppContainer>
-                    <h2>Apps</h2>
+                    <h2>{t("Top.App")}</h2>
                     <AppDirectory>
                         <AppDirItem>
                             <AppDirItemIcon
@@ -174,7 +157,7 @@ class App extends React.Component {
                     </AppDirectory>
 
              
-                    <h1>Update</h1>
+                    <h1>{t("Top.Update")}</h1>
 
                     <ArticleDirectory>
                         <ArticleCard>

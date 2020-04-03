@@ -16,40 +16,6 @@ export const GlidingThumb = styled.img`
   `}
 `;
 
-export const HeadingCard = styled.object`
-    position: absolute;
-    left: 100px;
-    width: 460px;
-    height: 460px;
-    z-index: 3;
-
-    ${mediaMobile`
-    left: 20px;
-    height: 220px;
-    width: 220px;
-  `}
-`;
-
-export const AnimationHeading = styled.div`
-    height: 520px;
-    display: flex;
-    align-items: center;
-    animation: loop 60s -25s linear infinite;
-
-    ${mediaMobile`
-    height: 250px;
-  `}
-
-    @keyframes loop {
-        0% {
-            transform: translate3d(0, 0, 0);
-        }
-        100% {
-            transform: translate3d(-50%, 0, 0);
-        }
-    }
-`;
-
 export const ArticleCard = styled.div`
     background: white;
     width: auto;
