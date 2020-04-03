@@ -1,21 +1,8 @@
 {
-  "Card": {
-    "InitMessage": "Search results"
-  },
-  "Error": {
-    "EmptyURL": "Empty URL!",
-    "InvalidURL": "Invalid URL! Specify a URL starting with http or https."
-  },
-  "Profile": {
-    "Message": {
-      "Description": "Create your own profile link or page!"
-    }
-  },
   "Top": {
-    "Button": "Search",
-    "Logout": "Logout",
-    "Message": "Find your favorite lessons",
-    "Signin": "Sign In"
-  },
-  "?": "Update"
+      "App": "アプリ",
+      "Update": "アップデート",
+      "Signin": "サインイン",
+      "Logout": "ログアウト"
+  }
 }

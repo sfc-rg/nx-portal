@@ -4,12 +4,5 @@
         "Update": "アップデート",
         "Signin": "サインイン",
         "Logout": "ログアウト"
-    },
-    "Card": {
-        "InitMessage": "検索結果"
-    },
-    "Error": {
-        "EmptyURL": "URLが空です.",
-        "InvalidURL": "不正なURLです. httpもしくはhttpsから始まるURLを指定してください."
     }
 }
