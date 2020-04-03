@@ -3,8 +3,6 @@ import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
 import {
-    HeadingCard,
-    AnimationHeading,
     GlidingThumb,
     AppContainer,
     Heading1
@@ -71,21 +69,6 @@ class App extends React.Component {
 
     linkTo(path) {
         window.location.href = "/article/" + path;
-    }
-
-    composeArticleCard(value) {
-        return (
-            <Row>
-                <ArticleCard>
-                    <h1>{value[0].title}</h1>
-                    <p>{value[0].description}</p>
-                </ArticleCard>
-                <ArticleCard>
-                    <h1>{value[1].title}</h1>
-                    <p>{value[1].description}</p>
-                </ArticleCard>
-            </Row>
-        );
     }
 
     componentDidMount() {
