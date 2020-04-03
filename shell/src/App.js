@@ -83,7 +83,7 @@ class App extends React.Component {
                 <NavigationBar>RG Portal</NavigationBar>
 
                 <AppContainer>
-                    <h2>Apps</h2>
+                    <h2>{t("Top.App")}</h2>
                     <AppDirectory>
                         <AppDirItem>
                             <AppDirItemIcon
@@ -157,7 +157,7 @@ class App extends React.Component {
                     </AppDirectory>
 
              
-                    <h1>Update</h1>
+                    <h1>{t("Top.Update")}</h1>
 
                     <ArticleDirectory>
                         <ArticleCard>
