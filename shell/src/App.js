@@ -1,12 +1,10 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
-import {
-    GlidingThumb,
-    AppContainer,
-    Heading1
-} from "./AppComponent";
+
+import { GlidingThumb, AppContainer, Heading1 } from "./AppComponent";
 import NavigationBar from "./pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
@@ -14,6 +12,11 @@ import {
     AppDirItemIcon,
     AppLabel
 } from "./pageComponents/AppDirectory/AppDirectory";
+
+import Animate from "animate.css-react";
+import "animate.css/animate.css";
+
+import LinkElement from "./UILib/LinkElement";
 
 import { Row } from "./components/Layout";
 
@@ -32,7 +35,6 @@ import styled from "styled-components";
 const ArticleDirectory = styled.div`
     display: flex;
     flex-direction: row;
-
     overflow-x: scroll;
 `;
 
@@ -59,6 +61,10 @@ class App extends React.Component {
         };
     }
 
+    toMeeting = () => {
+        this.props.history.push("/");
+    };
+
     fetchAPI() {
         APIClient.GET("/api/articles", data => {
             this.setState({
@@ -74,6 +80,10 @@ class App extends React.Component {
     componentDidMount() {
         this.fetchAPI();
     }
+
+    toMeeting = () => {
+        this.props.history.push("/meetings");
+    };
 
     render() {
         const { t } = this.props;
@@ -97,13 +107,14 @@ class App extends React.Component {
                                 type="image/svg+xml"
                                 data={FileIcon}
                             />
+
                             <AppLabel>Upload Files</AppLabel>
                         </AppDirItem>
                         <AppDirItem>
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={ThesisIcon}
-                            />{" "}
+                            />
                             <AppLabel>Thesis</AppLabel>
                         </AppDirItem>
                         <AppDirItem>
@@ -121,8 +132,9 @@ class App extends React.Component {
                             <AppLabel>TERM</AppLabel>
                         </AppDirItem>
 
-                        <AppDirItem>
+                        <AppDirItem linkURL="/meetings">
                             <AppDirItemIcon
+                                onClick={this.toMeeting}
                                 type="image/svg+xml"
                                 data={MTGICon}
                             />
@@ -145,8 +157,6 @@ class App extends React.Component {
                             <AppLabel>RG Mail</AppLabel>
                         </AppDirItem>
 
-                        
-
                         <AppDirItem>
                             <AppDirItemIcon
                                 type="image/svg+xml"
@@ -156,7 +166,6 @@ class App extends React.Component {
                         </AppDirItem>
                     </AppDirectory>
 
-             
                     <h1>{t("update")}</h1>
 
                     <ArticleDirectory>
@@ -184,11 +193,6 @@ class App extends React.Component {
                                 RGポータルはリニューアルしました。詳しい使い方は後ほど載せますうん
                             </p>
                         </ArticleCard>
-                       
-                       
-                       
-                       
-                       
                     </ArticleDirectory>
                 </AppContainer>
             </>
@@ -196,4 +200,4 @@ class App extends React.Component {
     }
 }
 
-export default withTranslation()(App);
+export default withRouter(withTranslation()(App));

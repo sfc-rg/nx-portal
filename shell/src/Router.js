@@ -7,6 +7,7 @@ import {
 
 // Import pages
 import App from "./App";
+import Meetings from "./Meetings";
 
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
@@ -19,6 +20,8 @@ function Router() {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={App} />
+                <Route exact path="/meetings" component={Meetings} />
+
                 <Route path="/m/signin" component={Login} />
                 <Route path="/m/signup" component={SignUp} />
                 <Route path="/m/logout" component={Logout} />
