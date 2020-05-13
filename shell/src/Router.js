@@ -8,6 +8,10 @@ import {
 // Import pages
 import App from "./App";
 import Meetings from "./Meetings";
+import WIP from "./WIP";
+import TERM from "./TERM";
+import Blog from "./Blog";
+import Thesis from "./Thesis";
 
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
@@ -21,6 +25,11 @@ function Router() {
             <Switch>
                 <Route exact path="/" component={App} />
                 <Route exact path="/meetings" component={Meetings} />
+                <Route exact path="/wip" component={WIP} />
+                <Route exact path="/term" component={TERM} />
+                <Route exact path="/blog" component={Blog} />
+                <Route exact path="/thesis" component={Thesis} />
+
 
                 <Route path="/m/signin" component={Login} />
                 <Route path="/m/signup" component={SignUp} />
