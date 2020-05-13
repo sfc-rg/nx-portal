@@ -5789,6 +5789,11 @@ istanbul-reports@^2.2.6:
   dependencies:
     handlebars "^4.1.2"
 
+iterall@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
+  integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
+
 jest-changed-files@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-24.9.0.tgz#08d8c15eb79a7fa3fc98269bc14b451ee82f8039"
@@ -8942,6 +8947,13 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-loops@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-loops/-/react-loops-1.3.0.tgz#9b1a8c7f6ca556c3b22ced4aabe4720ee203f61e"
+  integrity sha512-jWMmq75y4llq3jIIiEynGfp26wGTpVxAXHnp44XJotaySrJuD65lU3pAs67j/lfXlERtRcCAst2ca7bpsDWJhA==
+  dependencies:
+    iterall "^1.2.0"
 
 react-modern-datepicker@^1.1.0:
   version "1.1.0"
