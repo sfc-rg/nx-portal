@@ -9,6 +9,7 @@ import NavigationBar from "./pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
     AppDirItem,
+    AppDirItemExternal,
     AppDirItemIcon,
     AppLabel
 } from "./pageComponents/AppDirectory/AppDirectory";
@@ -95,7 +96,7 @@ class App extends React.Component {
                 <AppContainer>
                     <h2>{t("app")}</h2>
                     <AppDirectory>
-                        <AppDirItem>
+                        <AppDirItem to="/blog">
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={BlogIcon}
@@ -110,21 +111,21 @@ class App extends React.Component {
 
                             <AppLabel>Upload Files</AppLabel>
                         </AppDirItem>
-                        <AppDirItem>
+                        <AppDirItem to="/thesis">
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={ThesisIcon}
                             />
                             <AppLabel>Thesis</AppLabel>
                         </AppDirItem>
-                        <AppDirItem>
+                        <AppDirItem to="/wip">
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={WIPIcon}
                             />
                             <AppLabel>WIP</AppLabel>
                         </AppDirItem>
-                        <AppDirItem>
+                        <AppDirItem to="/term">
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={TermIcon}
@@ -132,7 +133,7 @@ class App extends React.Component {
                             <AppLabel>TERM</AppLabel>
                         </AppDirItem>
 
-                        <AppDirItem linkURL="/meetings">
+                        <AppDirItem to="/meetings">
                             <AppDirItemIcon
                                 onClick={this.toMeeting}
                                 type="image/svg+xml"
@@ -141,21 +142,25 @@ class App extends React.Component {
                             <AppLabel>Meetings</AppLabel>
                         </AppDirItem>
 
-                        <AppDirItem>
+                        <AppDirItemExternal
+                            href={"https://dash.sfc.wide.ad.jp/"}
+                        >
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={RGRootIcon}
                             />
                             <AppLabel>RGRoot Portal</AppLabel>
-                        </AppDirItem>
+                        </AppDirItemExternal>
 
-                        <AppDirItem>
+                        <AppDirItemExternal
+                            href={"https://mail.sfc.wide.ad.jp/"}
+                        >
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={MailIcon}
                             />
                             <AppLabel>RG Mail</AppLabel>
-                        </AppDirItem>
+                        </AppDirItemExternal>
 
                         <AppDirItem>
                             <AppDirItemIcon

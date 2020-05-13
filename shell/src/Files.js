@@ -2,8 +2,7 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
-import { GlidingThumb, AppContainer } from "./AppComponent";
-import { Container, Heading1 } from "./CommonComponent";
+import { GlidingThumb, AppContainer, Heading1 } from "./AppComponent";
 import NavigationBar from "./pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
@@ -33,16 +32,24 @@ const MeetingDirectory = styled.div`
     overflow-x: scroll;
 `;
 
+const ArticleCard = styled.div`
+    width: 390px;
+    height: 200px;
+    background: white;
+    padding: 15px;
+    padding-top: 3px;
+    margin: 10px;
+    border-radius: 10px;
+`;
+
 // Page Componrnts
 // ------------------------------------------------------------------------------
-class Meetings extends React.Component {
+class Files extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            data: [],
-            originUrl: "",
-            articles: []
+            counter: 5
         };
     }
 
@@ -54,12 +61,21 @@ class Meetings extends React.Component {
         });
     }
 
-    linkTo(path) {
-        window.location.href = "/article/" + path;
+    redirect() {
+        if (this.state.counter == 0) {
+            window.location.href = "https://portal.sfc.wide.ad.jp/blogs/new";
+        }
+    }
+
+    componentWillUpdate() {
+        this.redirect();
     }
 
     componentDidMount() {
-        this.fetchAPI();
+        this.timer = setInterval(() => {
+            const nextCount = this.state.counter - 1;
+            this.setState({ counter: nextCount });
+        }, 1000);
     }
 
     render() {
@@ -67,15 +83,19 @@ class Meetings extends React.Component {
 
         return (
             <>
-                <NavigationBar>Meetings</NavigationBar>
+                <NavigationBar>Blog</NavigationBar>
 
-                <Container>
-                    <Heading1>{t("scheduledMeeting")}</Heading1>
+                <AppContainer>
+                    <h1>New version will be released soon.</h1>
+                    <p>
+                        Automatically redirect to fallback version after{" "}
+                        {this.state.counter} seconds.
+                    </p>
                     <MeetingDirectory></MeetingDirectory>
-                </Container>
+                </AppContainer>
             </>
         );
     }
 }
 
-export default withTranslation("meetings")(Meetings);
+export default withTranslation("meetings")(Files);

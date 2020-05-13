@@ -2,8 +2,7 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
-import { GlidingThumb, AppContainer } from "./AppComponent";
-import { Container, Heading1 } from "./CommonComponent";
+import { GlidingThumb, AppContainer, Heading1 } from "./AppComponent";
 import NavigationBar from "./pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
@@ -35,7 +34,7 @@ const MeetingDirectory = styled.div`
 
 // Page Componrnts
 // ------------------------------------------------------------------------------
-class Meetings extends React.Component {
+class Thesis extends React.Component {
     constructor(props) {
         super(props);
 
@@ -67,15 +66,15 @@ class Meetings extends React.Component {
 
         return (
             <>
-                <NavigationBar>Meetings</NavigationBar>
+                <NavigationBar>Thesis</NavigationBar>
 
-                <Container>
-                    <Heading1>{t("scheduledMeeting")}</Heading1>
+                <AppContainer>
+                    <h1>現在開発中です.</h1>
                     <MeetingDirectory></MeetingDirectory>
-                </Container>
+                </AppContainer>
             </>
         );
     }
 }
 
-export default withTranslation("meetings")(Meetings);
+export default withTranslation("meetings")(Thesis);
