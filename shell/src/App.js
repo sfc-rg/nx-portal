@@ -132,7 +132,7 @@ class App extends React.Component {
                             <AppLabel>TERM</AppLabel>
                         </AppDirItem>
 
-                        <AppDirItem linkURL="/meetings">
+                        <AppDirItem to="/meetings">
                             <AppDirItemIcon
                                 onClick={this.toMeeting}
                                 type="image/svg+xml"
