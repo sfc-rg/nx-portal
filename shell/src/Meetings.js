@@ -2,11 +2,7 @@ import React from "react";
 import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
-import {
-    GlidingThumb,
-    AppContainer,
-    Heading1
-} from "./AppComponent";
+import { GlidingThumb, AppContainer, Heading1 } from "./AppComponent";
 import NavigationBar from "./pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
@@ -83,15 +79,8 @@ class Meetings extends React.Component {
                 <NavigationBar>Meetings</NavigationBar>
 
                 <AppContainer>
-                  
-                  
-             
                     <h1>{t("scheduledMeeting")}</h1>
-                    <MeetingDirectory>
-
-                    </MeetingDirectory>
-                   
-                   
+                    <MeetingDirectory></MeetingDirectory>
                 </AppContainer>
             </>
         );

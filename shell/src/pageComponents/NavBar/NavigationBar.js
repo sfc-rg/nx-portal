@@ -26,7 +26,7 @@ class NavigationBar extends React.Component {
                         <AuthOnlyView
                             elseComponent={
                                 <NavLink to="/m/signin">
-                                    {t("Top.Signin")}
+                                    {t("signin")}
                                 </NavLink>
                             }
                         >
@@ -39,4 +39,4 @@ class NavigationBar extends React.Component {
     }
 }
 
-export default withTranslation()(NavigationBar);
+export default withTranslation('navbar')(NavigationBar);

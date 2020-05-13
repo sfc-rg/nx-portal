@@ -1,12 +1,10 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 import { APIClient } from "./services/APIClient";
 // import { AuthOnlyView } from "./services/Auth";
-import {
-    GlidingThumb,
-    AppContainer,
-    Heading1
-} from "./AppComponent";
+
+import { GlidingThumb, AppContainer, Heading1 } from "./AppComponent";
 import NavigationBar from "./pageComponents/NavBar/NavigationBar";
 import {
     AppDirectory,
@@ -59,6 +57,10 @@ class App extends React.Component {
         };
     }
 
+    toMeeting = () => {
+        this.props.history.push("/");
+    }
+
     fetchAPI() {
         APIClient.GET("/api/articles", data => {
             this.setState({
@@ -74,6 +76,10 @@ class App extends React.Component {
     componentDidMount() {
         this.fetchAPI();
     }
+
+    toMeeting = () => {
+        this.props.history.push("/meetings");
+    };
 
     render() {
         const { t } = this.props;
@@ -122,10 +128,13 @@ class App extends React.Component {
                         </AppDirItem>
 
                         <AppDirItem>
-                            <AppDirItemIcon
-                                type="image/svg+xml"
-                                data={MTGICon}
-                            />
+
+
+                                <AppDirItemIcon
+                                    onClick={this.toMeeting}
+                                    type="image/svg+xml"
+                                    data={MTGICon}
+                                />
                             <AppLabel>Meetings</AppLabel>
                         </AppDirItem>
 
@@ -145,8 +154,6 @@ class App extends React.Component {
                             <AppLabel>RG Mail</AppLabel>
                         </AppDirItem>
 
-                        
-
                         <AppDirItem>
                             <AppDirItemIcon
                                 type="image/svg+xml"
@@ -156,7 +163,6 @@ class App extends React.Component {
                         </AppDirItem>
                     </AppDirectory>
 
-             
                     <h1>{t("update")}</h1>
 
                     <ArticleDirectory>
@@ -184,11 +190,6 @@ class App extends React.Component {
                                 RGポータルはリニューアルしました。詳しい使い方は後ほど載せますうん
                             </p>
                         </ArticleCard>
-                       
-                       
-                       
-                       
-                       
                     </ArticleDirectory>
                 </AppContainer>
             </>
@@ -196,4 +197,4 @@ class App extends React.Component {
     }
 }
 
-export default withTranslation()(App);
+export default withRouter(withTranslation()(App));
