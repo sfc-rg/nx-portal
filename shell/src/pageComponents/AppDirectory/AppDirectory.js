@@ -7,9 +7,10 @@ export const AppDirectory = styled.div`
     flex-direction: row;
 `;
 
-export const AppDirItem = styled.div`
+export const AppDirItemStyle = styled.div`
     width: 90px;
     height: 90px;
+    background: red;
     margin: 5px;
     margin-right: 20px;
     display: flex;
@@ -20,6 +21,23 @@ export const AppDirItem = styled.div`
         border-radius: 8px;
     }
 `;
+
+export class AppDirItem extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    toLink = () => {
+        window.location.href = this.props.linkURL;
+    };
+
+    render() {
+        return (
+            <AppDirItemStyle {...this.props} onClick={this.toLink} />
+        );
+    }
+}
 
 export const AppDirItemIcon = styled.object`
     width: 80px;

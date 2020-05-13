@@ -13,6 +13,11 @@ import {
     AppLabel
 } from "./pageComponents/AppDirectory/AppDirectory";
 
+import Animate from "animate.css-react";
+import "animate.css/animate.css";
+
+import LinkElement from "./UILib/LinkElement";
+
 import { Row } from "./components/Layout";
 
 // Assets
@@ -30,7 +35,6 @@ import styled from "styled-components";
 const ArticleDirectory = styled.div`
     display: flex;
     flex-direction: row;
-
     overflow-x: scroll;
 `;
 
@@ -59,7 +63,7 @@ class App extends React.Component {
 
     toMeeting = () => {
         this.props.history.push("/");
-    }
+    };
 
     fetchAPI() {
         APIClient.GET("/api/articles", data => {
@@ -103,13 +107,14 @@ class App extends React.Component {
                                 type="image/svg+xml"
                                 data={FileIcon}
                             />
+
                             <AppLabel>Upload Files</AppLabel>
                         </AppDirItem>
                         <AppDirItem>
                             <AppDirItemIcon
                                 type="image/svg+xml"
                                 data={ThesisIcon}
-                            />{" "}
+                            />
                             <AppLabel>Thesis</AppLabel>
                         </AppDirItem>
                         <AppDirItem>
@@ -127,14 +132,12 @@ class App extends React.Component {
                             <AppLabel>TERM</AppLabel>
                         </AppDirItem>
 
-                        <AppDirItem>
-
-
-                                <AppDirItemIcon
-                                    onClick={this.toMeeting}
-                                    type="image/svg+xml"
-                                    data={MTGICon}
-                                />
+                        <AppDirItem linkURL="/meetings">
+                            <AppDirItemIcon
+                                onClick={this.toMeeting}
+                                type="image/svg+xml"
+                                data={MTGICon}
+                            />
                             <AppLabel>Meetings</AppLabel>
                         </AppDirItem>
 

@@ -23,6 +23,7 @@ const AuthCard = styled.div`
     padding: 15px;
     padding-top: 0;
     margin-top: 90px;
+    background: white;
 
     @media screen and (max-width: 480px) {
         width: 100%;
