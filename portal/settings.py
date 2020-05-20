@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ('*', )
 # Application definition
 
 INSTALLED_APPS = [
+    'ldap.apps.LdapConfig',
     'webprovider.apps.WebproviderConfig',
     'upload.apps.UploadConfig',
     'setup.apps.SetupConfig',
