@@ -30,7 +30,6 @@ function Router() {
                 <Route exact path="/blog" component={Blog} />
                 <Route exact path="/thesis" component={Thesis} />
 
-
                 <Route path="/m/signin" component={Login} />
                 <Route path="/m/signup" component={SignUp} />
                 <Route path="/m/logout" component={Logout} />
