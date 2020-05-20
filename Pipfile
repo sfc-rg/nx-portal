@@ -26,6 +26,7 @@ channels = "*"
 django-markdownx = "*"
 markdown = "*"
 django-initial-setup = "*"
+ldap3 = "*"
 
 [requires]
 python_version = "3.8"
