@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "28314183ea0a265682ebf4eab2cc7c7ecaaa03119462cb221ca6d6f4ca1d95b5"
+            "sha256": "ac920c4c532962e254fb70df3fcf0133da82961d8ce9b4dd61cffb6cc5f13d7d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -138,6 +138,14 @@
             ],
             "index": "pypi",
             "version": "==3.0.6"
+        },
+        "django-auth-ldap": {
+            "hashes": [
+                "sha256:43c47c8eac1d0b1f1ee70d28534c7cef33deefddff996f8fae11dd937cc65e82",
+                "sha256:fabbbc35a5d28ce6a12e3f6309229d82bfe6a410391914938593e4b96ce42ec8"
+            ],
+            "index": "pypi",
+            "version": "==2.1.1"
         },
         "django-cors-headers": {
             "hashes": [
@@ -322,6 +330,12 @@
             ],
             "version": "==19.1.0"
         },
+        "python-ldap": {
+            "hashes": [
+                "sha256:7d1c4b15375a533564aad3d3deade789221e450052b21ebb9720fb822eccdb8e"
+            ],
+            "version": "==3.2.0"
+        },
         "pytz": {
             "hashes": [
                 "sha256:a494d53b6d39c3c6e44c3bec237336e14305e4f29bbf800b599253057fbb79ed",
@@ -390,11 +404,11 @@
         },
         "whitenoise": {
             "hashes": [
-                "sha256:0f9137f74bd95fa54329ace88d8dc695fbe895369a632e35f7a136e003e41d73",
-                "sha256:62556265ec1011bd87113fb81b7516f52688887b7a010ee899ff1fd18fd22700"
+                "sha256:60154b976a13901414a25b0273a841145f77eb34a141f9ae032a0ace3e4d5b27",
+                "sha256:6dd26bfda3af29177d8ab7333a0c7b7642eb615ce83764f4d15a9aecda3201c4"
             ],
             "index": "pypi",
-            "version": "==5.0.1"
+            "version": "==5.1.0"
         },
         "zope.interface": {
             "hashes": [

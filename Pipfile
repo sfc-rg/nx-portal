@@ -27,6 +27,7 @@ django-markdownx = "*"
 markdown = "*"
 django-initial-setup = "*"
 ldap3 = "*"
+django-auth-ldap = "*"
 
 [requires]
 python_version = "3.8"
