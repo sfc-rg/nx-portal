@@ -5,7 +5,6 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.models import User
 from django.conf import settings
 
-"""
 from ldap3 import Server, Connection, AUTH_SIMPLE, STRATEGY_SYNC, LDAPBindError
 
 
@@ -42,4 +41,3 @@ class LDAPBackend(object):
            return user.objects.get(pk=user_id)
        except User.DoesNotExist:
            return None
-"""
